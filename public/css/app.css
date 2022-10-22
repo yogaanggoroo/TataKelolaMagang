@@ -1,0 +1,82 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&family=Roboto:wght@300;500;900&display=swap");
+
+* {
+    font-family: "Roboto", "Montserrat", sans-serif;
+}
+
+ul.nav a:hover {
+    color: #0E4770 !important;
+}
+
+.hero-image {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/IndonesiaPLN.jpg");
+    height: 750px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+
+  .hero-text .txt-header {
+    font-weight: 900;
+    color: white;
+    font-size: 45px;
+  }
+
+  .txt-hero {
+    font-weight: 400;
+    color: white;
+    font-size: 19px;
+  }
+
+  .hero-text button:hover {
+    background-color: #555;
+    color: white;
+  }
+
+  .btn-registration {
+    font-size: 19px;
+    color: #fff;
+    background: #F66951;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
+  }
+
+  .container .btn-registration::hover {
+    background-color: #555;
+  }
+
+h1 {
+    font-weight: 600;
+}
+
+.container h1 {
+    font-size: 50px;
+    font-weight: 550;
+
+}
+
+.container h2 {
+    font-size: 35px;
+    color: white;
+}
+
+.container p {
+    font-size: 20px;
+}
+
+footer {
+
+    background-color: #0E4770;
+}
+
+.copyright {
+    font-size: 17px;
+    text-align: center;
+}
+
+.copyright a {
+    font-weight: 500;
+}

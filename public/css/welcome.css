@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&family=Roboto:wght@300;500;900&display=swap");
+
+/* Smooth scroll behavior */
+/* :root {
+  scroll-behavior: smooth;
+} */
+
+* {
+  font-family: "Roboto", "Montserrat", sans-serif;
+}
+
+.btn-user {
+  font-size: 14px;
+  color: black;
+  background: #FFFFFF;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+ul.nav a:hover {
+  color: #0E4770 !important;
+}
+
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/welcome-image.jpg");
+  height: 600px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#hero .container h1 {
+    font-weight: 600;;
+    font-size: 45px;
+}
+
+.txt-hero {
+  font-weight: 400;
+  color: white;
+  font-size: 19px;
+}
+
+.hero-text button:hover {
+  background-color: #555;
+  color: white;
+}
+
+.btn-registration {
+  font-size: 19px;
+  color: #fff;
+  background: #F66951;
+  padding: 8px 25px;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+}
+
+.container .btn-registration::hover {
+  background-color: #555;
+}
+
+footer {
+    background-color: #0E4770;
+}
+
+.copyright {
+  font-size: 17px;
+  text-align: center;
+}
+
+.copyright a {
+  font-weight: 500;
+}
+
+.btn-keluar {
+  font-size: 15px;
+  color: black;
+  background: #FFFFFF;
+  padding: 8px 20px;
+  border-radius: 50px;
+  transition: 0.3s;
+  text-decoration: none;
+}

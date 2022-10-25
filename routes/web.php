@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\UploadController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,6 +37,8 @@ Route::middleware([
         return view('magang');
     })->name('magang');
 });
+
+Route::post('upload',[UploadController::class, 'index']);
 
 Route::middleware([
     'auth:sanctum',

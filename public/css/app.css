@@ -44,10 +44,6 @@ ul.nav a:hover {
     text-decoration: none;
   }
 
-  .container .btn-registration::hover {
-    background-color: #555;
-  }
-
 h1 {
     font-weight: 600;
 }
@@ -65,6 +61,30 @@ h1 {
 
 .container p {
     font-size: 20px;
+}
+
+.card-header {
+    font-size: 30px;
+}
+
+.card-text {
+    font-size: 25px;
+    font-weight: 300;
+}
+
+.card-body .btn-magang {
+    background-color: #0E4770;
+    color: white;
+    font-size: 20px;
+}
+
+.card-body .btn-magang:hover{
+    background-color: #F66951;
+    color: white;
+}
+
+.txt-magang {
+    font-size: 30px;
 }
 
 footer {

@@ -46,7 +46,7 @@
 
                     <div class="container py-5 h-100">
 
-                        <p>Selamat Anda Telah Lulus Program Magang Di PT PLN (Persero) <br> Silahkan Cetak Sertifikat
+                        <p>Selamat Anda Telah Lulus Program Magang Di PT PLN (Persero) <br> Silahkan Isi Nama Lengkap & Cetak Sertifikat
                             Dibawah Ini</p>
 
                         <!-- Submit button -->

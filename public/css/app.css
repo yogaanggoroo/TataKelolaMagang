@@ -44,6 +44,11 @@ ul.nav a:hover {
     text-decoration: none;
   }
 
+  .btn-registration:hover {
+    background-color: #fa4626;
+    color: white;
+  }
+
 h1 {
     font-weight: 600;
 }

@@ -38,8 +38,6 @@ Route::middleware([
     })->name('magang');
 });
 
-Route::post('upload',[UploadController::class, 'index']);
-
 Route::middleware([
     'auth:sanctum',
     config('jetstream.auth_session'),

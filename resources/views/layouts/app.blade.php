@@ -5,8 +5,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
+    <link rel="icon" type="image/png" href="/img/logo_pln2.png">
 
-    <title>{{ config('app.name', 'Aplikasi Tata Kelola Magang') }}</title>
+    <title>Aplikasi Tata Kelola Magang</title>
     <link rel="stylesheet" href="/css/app.css">
 
 

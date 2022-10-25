@@ -58,9 +58,10 @@ ul.nav a:hover {
   text-decoration: none;
 }
 
-.container .btn-registration::hover {
-  background-color: #555;
-}
+.btn-registration:hover {
+    background-color: #fa4626;
+    color: white;
+  }
 
 footer {
     background-color: #0E4770;

@@ -50,42 +50,38 @@
                 <div class="pt-sm-3">
                     <div class="card-header" style="background-color: #0E4770;">
                         <div class="pt-lg-1">
-
                             <h2>PRESENSI MAGANG</h2>
                         </div>
                     </div>
 
-                    <div class="container py-5 h-100">
-                        <div class="row d-flex align-items-center justify-content-center h-100">
+                    <div class="container py-5">
+                        <div class="row d-flex align-items-center justify-content-center">
                             <div class="col-md-8 col-lg-7 col-xl-6">
                                 <img src="/img/presensi-magang.svg" class="img-fluid" alt="Presence image">
                             </div>
                             <div class="col-md-7 col-lg-5 col-xl-5 offset-xl-1">
                                 <form>
-                                    <!-- Name input -->
+
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="namaLengkap">Nama Lengkap</label>
-                                        <input type="text" id="namaLengkap" class="form-control form-control-lg"
-                                            placeholder="Masukkan nama lengkap" />
+                                        <input type="text" id="namaLengkap" class="form-control"
+                                            placeholder="Masukkan nama lengkap" required />
                                     </div>
 
-                                    <!-- Division input -->
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="divisi">Divisi</label>
-                                        <input type="text" id="divisi" class="form-control form-control-lg"
-                                            placeholder="Masukkan divisi" />
+                                        <input type="text" id="divisi" class="form-control"
+                                            placeholder="Masukkan divisi" required />
                                     </div>
 
-                                    <!-- Division input -->
                                     <div class="form-outline mb-4">
                                         <label class="form-label" for="tanggalPresensi">Tanggal</label>
-                                        <input type="date" id="tanggalPresensi" class="form-control form-control-lg" />
+                                        <input type="date" id="tanggalPresensi" class="form-control" required />
                                     </div>
 
-                                    <!-- Division input -->
                                     <div class="form-outline mb-4">
                                         <label for="keteranganPeserta" class="form-label">Keterangan</label>
-                                        <select class="form-select" id="keteranganPeserta" name="Keterangan">
+                                        <select class="form-select" id="keteranganPeserta" name="Keterangan" required>
                                             <option>Hadir</option>
                                             <option>Izin</option>
                                             <option>Sakit</option>
@@ -97,6 +93,7 @@
                                         <button type="submit" class="btn btn-block mb-3"
                                             style="background-color: #0E4770; color: white;">Save</button>
                                     </div>
+
                                 </form>
                             </div>
                         </div>

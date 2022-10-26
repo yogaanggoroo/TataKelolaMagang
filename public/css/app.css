@@ -84,8 +84,8 @@ h1 {
 }
 
 .card-body .btn-magang:hover{
-    background-color: #F66951;
-    color: white;
+    background-color: #F66951 !important;
+    color: white !important;
 }
 
 .txt-magang {

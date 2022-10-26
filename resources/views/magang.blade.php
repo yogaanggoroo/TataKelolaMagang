@@ -51,7 +51,7 @@
 
 
                 <div class="d-grid pt-3">
-                    <a href="https://forms.office.com/r/bknNTH4s9g" class="btn btn-magang">Apply</a>
+                    <a href="https://forms.gle/avSoUv9BxTsaDvBh9" class="btn btn-magang">Apply</a>
                 </div>
             </div>
         </div>

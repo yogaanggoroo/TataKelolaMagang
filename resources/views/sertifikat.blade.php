@@ -44,7 +44,7 @@
                         </div>
                     </div>
 
-                    <div class="container py-5 h-100">
+                    <div class="container py-4 h-100">
 
                         <p>Selamat Anda Telah Lulus Program Magang Di PT PLN (Persero) <br> Silahkan Isi Nama Lengkap & Cetak Sertifikat
                             Dibawah Ini</p>
@@ -52,7 +52,7 @@
                         <!-- Submit button -->
                         <div class="pt-2">
                             <button type="submit" class="btn btn-block mb-3"
-                                style="background-color: #0E4770; color: white;">Cetak PDF</button>
+                                style="background-color: #0E4770; color: white;">Cetak Sertifikat</button>
                         </div>
                     </div>
                 </div>

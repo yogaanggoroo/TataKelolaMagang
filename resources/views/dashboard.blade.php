@@ -64,7 +64,7 @@
                         <div class="card-body p-md-5">
 
                             <h2 class="txt-content mb-4 pb-2 pb-md-0 mb-md-5 text-center">
-                                Kenapa harus mengikuti program <br> Magang
+                                Kenapa harus mengikuti Program <br> Magang
                                 PT PLN (Persero)</h2>
                             <div class="list-magang pt-1 text-center">
                                 <p>1. Belajar dan memperluas jaringan di PT PLN (Persero) <br>

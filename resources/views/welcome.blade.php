@@ -50,7 +50,7 @@
                     @if (Route::has('login'))
                     <div class="pt-4">
                         @auth
-                            <a href="{{ url('/dashboard') }}" class="">Dashboard</a>
+                            <a href="{{ url('/dashboard') }}" class="btn-registration">Dashboard</a>
                         @else
                             <a href="{{ route('login') }}" class="btn-registration">Login</a>
 

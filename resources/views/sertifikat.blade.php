@@ -46,13 +46,13 @@
 
                     <div class="container py-4 h-100">
 
-                        <p>Selamat Anda Telah Lulus Program Magang Di PT PLN (Persero) <br> Silahkan Isi Nama Lengkap & Cetak Sertifikat
+                        <p>Selamat Anda Telah Lulus Program Magang Di PT PLN (Persero) <br> Silahkan Isi & Cetak Sertifikat
                             Dibawah Ini</p>
 
-                        <!-- Submit button -->
+                        <!-- Cetak Sertifikat -->
                         <div class="pt-2">
-                            <button type="submit" class="btn btn-block mb-3"
-                                style="background-color: #0E4770; color: white;">Cetak Sertifikat</button>
+                            <a href="https://forms.gle/jpXsoqnb66SbvmGW8" class="btn btn-block mb-3"
+                            style="background-color: #0E4770; color: white;" >Cetak Sertifikat</a>
                         </div>
                     </div>
                 </div>

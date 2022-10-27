@@ -6,82 +6,83 @@
 } */
 
 * {
-  font-family: "Roboto", "Montserrat", sans-serif;
+    font-family: "Roboto", "Montserrat", sans-serif;
 }
 
 .btn-user {
-  font-size: 14px;
-  color: black;
-  background: #FFFFFF;
-  padding: 8px 20px;
-  border-radius: 50px;
-  transition: 0.3s;
-  text-decoration: none;
+    font-size: 14px;
+    color: black;
+    background: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 ul.nav a:hover {
-  color: #0E4770 !important;
+    color: #0E4770 !important;
 }
 
 .hero-image {
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/welcome-image.jpg");
-  height: 600px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/welcome-image.jpg");
+    height: 600px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
 }
 
 #hero .container h1 {
-    font-weight: 600;;
+    font-weight: 600;
+    ;
     font-size: 45px;
 }
 
 .txt-hero {
-  font-weight: 400;
-  color: white;
-  font-size: 19px;
+    font-weight: 400;
+    color: white;
+    font-size: 19px;
 }
 
 .hero-text button:hover {
-  background-color: #555;
-  color: white;
+    background-color: #555;
+    color: white;
 }
 
 .btn-registration {
-  font-size: 19px;
-  color: #fff;
-  background: #F66951;
-  padding: 8px 25px;
-  border-radius: 50px;
-  transition: 0.3s;
-  text-decoration: none;
+    font-size: 19px;
+    color: #fff;
+    background: #F66951;
+    padding: 8px 25px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
 }
 
 .btn-registration:hover {
     background-color: #fa4626;
     color: white;
-  }
+}
 
 footer {
     background-color: #0E4770;
 }
 
 .copyright {
-  font-size: 17px;
-  text-align: center;
+    font-size: 17px;
+    text-align: center;
 }
 
 .copyright a {
-  font-weight: 500;
+    font-weight: 500;
 }
 
 .btn-keluar {
-  font-size: 15px;
-  color: black;
-  background: #FFFFFF;
-  padding: 8px 20px;
-  border-radius: 50px;
-  transition: 0.3s;
-  text-decoration: none;
+    font-size: 15px;
+    color: black;
+    background: #FFFFFF;
+    padding: 8px 20px;
+    border-radius: 50px;
+    transition: 0.3s;
+    text-decoration: none;
 }

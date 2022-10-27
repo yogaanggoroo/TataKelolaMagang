@@ -15,26 +15,26 @@ ul.nav a:hover {
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
-  }
+}
 
-  .hero-text .txt-header {
+.hero-text .txt-header {
     font-weight: 900;
     color: white;
     font-size: 45px;
-  }
+}
 
-  .txt-hero {
+.txt-hero {
     font-weight: 400;
     color: white;
     font-size: 19px;
-  }
+}
 
-  .hero-text button:hover {
+.hero-text button:hover {
     background-color: #555;
     color: white;
-  }
+}
 
-  .btn-registration {
+.btn-registration {
     font-size: 19px;
     color: #fff;
     background: #F66951;
@@ -42,12 +42,12 @@ ul.nav a:hover {
     border-radius: 50px;
     transition: 0.3s;
     text-decoration: none;
-  }
+}
 
-  .btn-registration:hover {
+.btn-registration:hover {
     background-color: #fa4626;
     color: white;
-  }
+}
 
 h1 {
     font-weight: 600;
@@ -83,7 +83,7 @@ h1 {
     font-size: 20px;
 }
 
-.card-body .btn-magang:hover{
+.card-body .btn-magang:hover {
     background-color: #F66951 !important;
     color: white !important;
 }

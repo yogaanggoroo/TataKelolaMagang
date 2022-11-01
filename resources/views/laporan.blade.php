@@ -46,19 +46,20 @@
 
                     <div class="container py-5 h-100">
 
-                        <form>
+                        <form action="add" method="POST">
+                            @csrf
 
                             <div class="row">
 
                                 <div class="form-outline w-100">
                                     <label class="form-label" for="namaLengkap">Nama Lengkap</label>
-                                    <input type="text" id="namaLengkap" class="form-control form-control-lg"
+                                    <input type="text" id="namaLengkap" class="form-control" name="name"
                                         placeholder="Masukkan nama lengkap" />
                                 </div>
 
                                 <div class="form-outline pt-3">
                                     <label class="form-label" for="divisi">Divisi</label>
-                                    <input type="text" id="divisi" class="form-control form-control-lg"
+                                    <input type="text" id="divisi" class="form-control" name="division"
                                         placeholder="Masukkan divisi" />
                                 </div>
 
@@ -68,17 +69,16 @@
 
                                 <div class="form-outline w-100 pt-3">
                                     <label class="form-label" for="tanggalLaporan">Tanggal</label>
-                                    <input type="date" id="tanggalLaporan" class="form-control form-control-lg" />
+                                    <input type="date" id="tanggalLaporan" name="date" class="form-control" />
                                 </div>
 
                             </div>
 
                             <div class="row">
 
-
                                 <div class="form-outline w-100 pt-3">
                                     <label for="laporanPeserta" class="form-label">Laporan</label>
-                                    <textarea class="form-control" id="laporanPeserta" rows="3"
+                                    <textarea class="form-control" id="laporanPeserta" rows="3" name="reports"
                                         placeholder="Isi laporan"></textarea>
                                 </div>
 

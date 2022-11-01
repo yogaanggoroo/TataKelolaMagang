@@ -45,13 +45,14 @@
 
                 <div class="text-center pt-sm-2">
                     <h4 class="txt-magang">PROSES SELEKSI MAGANG</h4>
-                    <img src="/img/alur-seleksi-magang.png" alt="alur seleksi magang" class="mx-auto d-block" width="400"
-                        height="400">
+                    <img src="/img/alur-seleksi-magang.png" alt="alur seleksi magang" class="mx-auto d-block" width="550"
+                        height="550">
                 </div>
 
 
                 <div class="d-grid pt-3">
-                    <a href="https://forms.gle/avSoUv9BxTsaDvBh9" class="btn btn-magang">Apply</a>
+                    <a href="{{ route('daftar') }}" :active="request()->routeIs('daftar')"
+                        class="btn btn-magang">{{ __('Apply') }}</a>
                 </div>
             </div>
         </div>

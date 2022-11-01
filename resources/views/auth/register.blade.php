@@ -8,6 +8,7 @@
     <meta name="" content="firdausyogaanggoro@gmail.com, ahmadsultoni24psp@gmail.com">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
     <link rel="icon" type="image/png" href="/img/logo_pln2.png">
     <title>Register</title>
     <link rel="stylesheet" href="/css/register.css">
@@ -86,10 +87,30 @@
                                     <a href="{{ route('login') }}" class="">{{ __('Already registered?') }}</a>
 
                                     <div class="d-grid mt-3">
-                                        <button type="submit" class="btn btn-block mb-3"
+                                        <button type="submit" class="btn btn-block mb-3" onclick="contoh()"
                                             style="background-color: #0E4770; color: white;">{{ __('Register') }}</button>
                                     </div>
                                 </div>
+
+                                <script type="text/javascript">
+
+                                    function contoh() {
+
+                                       swal({
+
+                                            title: "Berhasil!",
+
+                                            text: "Anda berhasil membuat Akun",
+
+                                            icon: "success",
+
+                                            button: true
+
+                                        });
+
+                                    }
+
+                                </script>
 
                             </form>
                         </div>

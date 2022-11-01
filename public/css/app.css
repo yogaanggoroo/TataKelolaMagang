@@ -8,6 +8,10 @@ ul.nav a:hover {
     color: #0E4770 !important;
 }
 
+.card-body .header-login {
+    font-size: 30px;
+}
+
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/IndonesiaPLN.jpg");
     height: 750px;
@@ -92,8 +96,46 @@ h1 {
     font-size: 30px;
 }
 
-footer {
+.txt-register p {
+    font-size: 17px;
+}
 
+.container .presence-image {
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+}
+
+.container .btn-checkin {
+    padding: 6px 280px;
+}
+
+.container .btn-checkin:hover {
+    background-color: #189936 !important;
+
+}
+
+.container .btn-checkout {
+    padding: 6px 280px;
+}
+
+.container .btn-checkout:hover {
+    background-color: #c92031 !important;
+    color: white;
+}
+
+.container .btn-history {
+    padding: 6px ;
+}
+
+.container .btn-history:hover {
+    background-color: #fa4626 !important;
+    color: white;
+}
+
+footer {
     background-color: #0E4770;
 }
 
@@ -105,3 +147,45 @@ footer {
 .copyright a {
     font-weight: 500;
 }
+
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+    padding: 15px 0;
+    background: #f6f6f7;
+    margin-top: 30px;
+  }
+  .breadcrumbs h2 {
+    font-size: 24px;
+    line-height: 1;
+    font-weight: 400;
+  }
+  .breadcrumbs ol {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 14px;
+  }
+  .breadcrumbs ol li + li {
+    padding-left: 10px;
+  }
+  .breadcrumbs ol li + li::before {
+    display: inline-block;
+    padding-right: 10px;
+    color: #4f4c55;
+    content: "/";
+  }
+  @media (max-width: 768px) {
+    .breadcrumbs .d-flex {
+      display: block !important;
+    }
+    .breadcrumbs ol {
+      display: block;
+    }
+    .breadcrumbs ol li {
+      display: inline-block;
+    }
+  }

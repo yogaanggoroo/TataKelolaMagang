@@ -40,25 +40,26 @@
                 <div class="pt-sm-3">
                     <div class="card-header" style="background-color: #0E4770;">
                         <div class="pt-lg-1">
-                            <h2>TUGAS</h2>
+                            <h2>PROJECT ASSIGNMENT</h2>
                         </div>
                     </div>
 
                     <div class="container py-5 h-100">
 
-                        <form>
+                        <form action="adds" method="POST">
+                            @csrf
 
                             <div class="row">
 
                                 <div class="form-outline w-100">
                                     <label class="form-label" for="namaLengkap">Nama Lengkap</label>
-                                    <input type="text" id="namaLengkap" class="form-control form-control-lg"
+                                    <input type="text" id="namaLengkap" class="form-control" name="name"
                                         placeholder="Masukkan nama lengkap" />
                                 </div>
 
                                 <div class="form-outline pt-3">
                                     <label class="form-label" for="divisi">Divisi</label>
-                                    <input type="text" id="divisi" class="form-control form-control-lg"
+                                    <input type="text" id="divisi" class="form-control" name="division"
                                         placeholder="Masukkan divisi" />
                                 </div>
 
@@ -68,7 +69,7 @@
 
                                 <div class="form-outline w-100 pt-3">
                                     <label class="form-label" for="tanggalTugas">Tanggal</label>
-                                    <input type="date" id="tanggalTugas" class="form-control form-control-lg" />
+                                    <input type="date" id="tanggalTugas" class="form-control" name="date" />
                                 </div>
 
                             </div>
@@ -78,7 +79,7 @@
 
                                 <div class="form-outline w-100 pt-3">
                                     <label class="form-label" for="uploadTugas">Upload Tugas</label>
-                                    <input type="file" class="form-control" id="uploadTugas" />
+                                    <input type="file" class="form-control" id="uploadTugas" name="upload" />
                                 </div>
 
                             </div>

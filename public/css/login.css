@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&family=Roboto:wght@300;500;900&display=swap");
+
+* {
+    font-family: "Roboto", "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+ul.nav a:hover {
+    color: #0E4770 !important;
+}
+
+.card-body .header-login {
+    font-size: 33px;
+    font-weight: 550;
+}
+
+.txt-register p {
+    font-size: 17px;
+}
+
+footer {
+    background-color: #0E4770;
+}
+
+.copyright {
+    font-size: 17px;
+    text-align: center;
+}
+
+.copyright a {
+    font-weight: 500;
+}

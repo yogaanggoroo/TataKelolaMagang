@@ -87,7 +87,7 @@
                                     <a href="{{ route('login') }}" class="">{{ __('Already registered?') }}</a>
 
                                     <div class="d-grid mt-3">
-                                        <button type="submit" class="btn btn-block mb-3" onclick="contoh()"
+                                        <button href="{{ route('login') }}" type="submit" class="btn btn-block mb-3" onclick="contoh()"
                                             style="background-color: #0E4770; color: white;">{{ __('Register') }}</button>
                                     </div>
                                 </div>
@@ -104,7 +104,9 @@
 
                                             icon: "success",
 
-                                            button: true
+                                            button: true,
+
+                                            timer: 5000
 
                                         });
 

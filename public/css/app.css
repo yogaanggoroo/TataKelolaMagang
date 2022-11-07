@@ -4,8 +4,12 @@
     font-family: "Roboto", "Montserrat", sans-serif;
 }
 
+body {
+    min-height: 100vh;
+}
+
 ul.nav a:hover {
-    color: #0E4770 !important;
+    color:#5F5F5F  !important;
 }
 
 .card-body .header-login {
@@ -109,7 +113,7 @@ h1 {
 }
 
 .container .btn-checkin {
-    padding: 6px 280px;
+    padding: 6px 273px;
 }
 
 .container .btn-checkin:hover {
@@ -118,7 +122,7 @@ h1 {
 }
 
 .container .btn-checkout {
-    padding: 6px 280px;
+    padding: 6px 273px;
 }
 
 .container .btn-checkout:hover {
@@ -131,7 +135,7 @@ h1 {
 }
 
 .container .btn-history:hover {
-    background-color: #fa4626 !important;
+    background-color: #043c65 !important;
     color: white;
 }
 
@@ -189,3 +193,5 @@ footer {
       display: inline-block;
     }
   }
+
+

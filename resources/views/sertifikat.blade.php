@@ -37,7 +37,7 @@
     <div class="vh-100 pt-sm-4">
         <div class="container-sm card">
             <div class="container pt-lg-3">
-                <div class="pt-sm-3">
+                <div class="pt-sm-1">
                     <div class="card-header" style="background-color: #0E4770;">
                         <div class="pt-lg-1">
                             <h2>SERTIFIKAT</h2>
@@ -60,11 +60,9 @@
         </div>
     </div>
 
-        <footer>
-
-            <div class="copyright p-3 text-white">
-                PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
-            </div>
-
-        </footer>
+    <footer>
+        <div class="copyright p-3 text-white">
+            PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
+        </div>
+    </footer>
 </x-app-layout>

@@ -37,7 +37,7 @@
     <div class="vh-100 pt-sm-4">
         <div class="container-sm card">
             <div class="container pt-lg-3">
-                <div class="pt-sm-3">
+                <div class="pt-sm-1">
                     <div class="card-header" style="background-color: #0E4770;">
                         <div class="pt-lg-1">
                             <h2>PROJECT ASSIGNMENT</h2>
@@ -52,13 +52,13 @@
                             <div class="row">
 
                                 <div class="form-outline w-100">
-                                    <label class="form-label" for="namaLengkap">Nama Lengkap</label>
+                                    <label class="" for="namaLengkap">Nama Lengkap</label>
                                     <input type="text" id="namaLengkap" class="form-control" name="name"
                                         placeholder="Masukkan nama lengkap" />
                                 </div>
 
                                 <div class="form-outline pt-3">
-                                    <label class="form-label" for="divisi">Divisi</label>
+                                    <label class="" for="divisi">Divisi</label>
                                     <input type="text" id="divisi" class="form-control" name="division"
                                         placeholder="Masukkan divisi" />
                                 </div>
@@ -68,7 +68,7 @@
                             <div class="row">
 
                                 <div class="form-outline w-100 pt-3">
-                                    <label class="form-label" for="tanggalTugas">Tanggal</label>
+                                    <label class="" for="tanggalTugas">Tanggal</label>
                                     <input type="date" id="tanggalTugas" class="form-control" name="date" />
                                 </div>
 
@@ -78,7 +78,7 @@
 
 
                                 <div class="form-outline w-100 pt-3">
-                                    <label class="form-label" for="uploadTugas">Upload Tugas</label>
+                                    <label class="" for="uploadTugas">Upload Tugas</label>
                                     <input type="file" class="form-control" id="uploadTugas" name="upload" />
                                 </div>
 
@@ -101,13 +101,6 @@
         </div>
     </div>
 
-    <div class="pt-4">
-        <footer>
-
-            <div class="copyright p-3 text-white">
-                PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
-            </div>
-
-        </footer>
-    </div>
+    <!-- Footer -->
+    @include('template.footer')
 </x-app-layout>

@@ -40,13 +40,14 @@
             <h4 class="card-header text-center">PROGRAM MAGANG PT PLN (PERSERO)</h4>
             <div class="card-body">
                 <p class="card-text">PT PLN (Persero) membuka kesempatan kepada seluruh Warga Negara Indonesia yang
-                    berstatus mahasiswa tingkat akhir atau lulusan baru Perguruan Tinggi Negeri maupun Swasta serta memiliki integritas
+                    berstatus mahasiswa tingkat akhir atau lulusan baru Perguruan Tinggi Negeri maupun Swasta serta
+                    memiliki integritas
                     dan juga komitmen yang tinggi untuk mengikuti program magang.</p> <br>
 
                 <div class="text-center pt-sm-2">
                     <h4 class="txt-magang">PROSES SELEKSI MAGANG</h4>
-                    <img src="/img/alur-seleksi-magang.png" alt="alur seleksi magang" class="mx-auto d-block" width="550"
-                        height="550">
+                    <img src="/img/alur-seleksi-magang.png" alt="alur seleksi magang" class="mx-auto d-block"
+                        width="550" height="550">
                 </div>
 
 
@@ -58,13 +59,6 @@
         </div>
     </div>
 
-    <div class="pt-4">
-        <footer>
-
-            <div class="copyright p-3 text-white">
-                PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
-            </div>
-
-        </footer>
-    </div>
+    <!-- Footer -->
+    @include('template.footer')
 </x-app-layout>

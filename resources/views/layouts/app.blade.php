@@ -7,6 +7,8 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
     <link rel="icon" type="image/png" href="/img/logo_pln2.png">
 
+    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
+
     <title>Aplikasi Tata Kelola Magang</title>
     <link rel="stylesheet" href="/css/app.css">
 
@@ -22,14 +24,14 @@
 
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.all.min.js"></script>
+
 
     <!-- Styles -->
     @livewireStyles
 </head>
 
-<body>
-
+<body onload="realtimeClock()">
 
     <div class="min-h-screen">
         @livewire('navigation-menu')

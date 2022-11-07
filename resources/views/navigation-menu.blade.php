@@ -1,4 +1,4 @@
-<nav x-data="{ open: false }" class=" border-b border-gray-100" style="background-color: #0E4770;">
+<nav x-data="{ open: false }" class="sticky-top" style="background-color: #0E4770;">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div class="flex justify-between h-16">
@@ -20,6 +20,7 @@
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+
                 <!-- Teams Dropdown -->
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())
                     <div class="ml-3 relative">

@@ -52,7 +52,8 @@ class PresensiController extends Controller
             ['tgl','=',$tanggal],
         ])->first();
         if ($presensi){
-            dd("sudah melakukan presensi");
+            //dd("sudah melakukan presensi");
+            return redirect('masuk')->with('success', 'Anda sudah melakukan presensi masuk!');
         }else{
             Presensi::create([
                 'user_id' => auth()->user()->id,
@@ -61,7 +62,7 @@ class PresensiController extends Controller
             ]);
         }
 
-        return redirect('masuk');
+        return redirect('masuk')->with('success', 'Selamat bekerja!');
     }
 
     /**
@@ -83,9 +84,11 @@ class PresensiController extends Controller
      */
     public function tampildatakeseluruhan($tglawal, $tglakhir)
     {
+        //$pagination = 2;
+        //$presensi = Presensi::paginate($pagination);
+        //$presensi = Presensi::all();
         $presensi = Presensi::with('user')->whereBetween('tgl',[$tglawal, $tglakhir])->orderBy('tgl','asc')->get();
         return view('history',compact('presensi'));
-        //$presensi = Presensi::all();
         //return view('history',compact('presensi'));
         //return view('history', [presensiList => presensi ]);
 
@@ -115,9 +118,10 @@ class PresensiController extends Controller
 
         if ($presensi->jam_keluar == ""){
             $presensi->update($dt);
-            return redirect('keluar');
+            return redirect('keluar')->with('success', 'Selamat beraktivitas!');
         }else{
-            dd("Sudah melakukan presensi keluar");
+           // dd("Sudah melakukan presensi keluar");
+            return redirect('keluar')->with('success', 'Anda sudah melakukan presensi keluar!');
         }
     }
 

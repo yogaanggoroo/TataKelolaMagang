@@ -22,7 +22,6 @@
                     4px 4px 30px rgba(210, 25, 16, 0.4),
                     4px 4px 40px rgba(210, 15, 06, 0.4),
             }
-
         </style>
 
         <nav>
@@ -54,11 +53,9 @@
                 </ul>
             </div>
         </nav>
-
     </x-slot>
 
     <!-- ISI -->
-
     <div class="pt-sm-5">
         <!-- Main content -->
         <div class="vh-100 container ">
@@ -82,18 +79,11 @@
                             </div>
                             <center>
                                 <div class="form-group">
-                                    <button type="submit" onclick="masuk()"
+                                    <button type="submit"
                                         class="btn btn-presensi btn-outline-primary">Klik Untuk
                                         Presensi Masuk</button>
                                 </div>
                             </center>
-
-                            <script>
-                                function masuk() {
-                                    alert("Selamat Bekerja!!");
-                                }
-
-                            </script>
                         </form>
 
                     </div>

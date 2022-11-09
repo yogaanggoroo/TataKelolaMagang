@@ -1,6 +1,5 @@
 <x-app-layout>
     <x-slot name="header">
-
         <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
@@ -30,8 +29,6 @@
                 </ul>
             </div>
         </nav>
-
-
     </x-slot>
 
     </-- ISI -->
@@ -39,7 +36,7 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div
-                    class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start pt-3">
+                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start pt-3">
                     <div class="hero-text pt-lg-5">
                         <h1 class="txt-header">MONITORING MAGANG PT PLN (PERSERO)</h1>
                         <p class="txt-hero pt-2">Suatu program belajar secara
@@ -84,7 +81,7 @@
     <footer>
 
         <div class="copyright p-3 text-white">
-            PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
+            PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
         </div>
 
     </footer>

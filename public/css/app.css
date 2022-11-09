@@ -28,13 +28,13 @@ ul.nav a:hover {
 .hero-text .txt-header {
     font-weight: 900;
     color: white;
-    font-size: 45px;
+    font-size: 46px;
 }
 
-.txt-hero {
+.hero-text .txt-hero {
     font-weight: 400;
     color: white;
-    font-size: 19px;
+    font-size: 20px;
 }
 
 .hero-text button:hover {

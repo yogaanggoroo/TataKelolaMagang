@@ -54,13 +54,9 @@
                 </ul>
             </div>
         </nav>
-
     </x-slot>
 
     <!-- ISI -->
-
-
-
     <div class="pt-sm-5">
         <!-- Main content -->
         <div class="vh-100 container ">
@@ -84,16 +80,10 @@
                             </div>
                             <center>
                                 <div class="form-group">
-                                    <button type="submit" onclick="keluar()" class="btn btn-presensi btn-outline-primary" style="">Klik
+                                    <button type="submit" class="btn btn-presensi btn-outline-primary" style="">Klik
                                         Untuk Presensi Keluar</button>
                                 </div>
                             </center>
-
-                            <script>
-                                function keluar() {
-                                    alert("Selamat Beraktivitas!!");
-                                    }
-                            </script>
                         </form>
 
                     </div>

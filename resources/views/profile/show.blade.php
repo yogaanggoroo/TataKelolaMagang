@@ -42,4 +42,7 @@
             @endif
         </div>
     </div>
+
+    <!-- Footer -->
+    @include('template.footer')
 </x-app-layout>

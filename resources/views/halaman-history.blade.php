@@ -1,6 +1,5 @@
 <x-app-layout>
     <x-slot name="header">
-
         <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
@@ -30,12 +29,10 @@
                 </ul>
             </div>
         </nav>
-
     </x-slot>
 
 
     <!-- ISI -->
-
     <section class="breadcrumbs">
         <div class="container">
 
@@ -83,7 +80,6 @@
         </div>
     </div>
     <!-- /.content -->
-
     </div>
     <!-- /.content-wrapper -->
 

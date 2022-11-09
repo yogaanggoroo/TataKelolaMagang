@@ -1,6 +1,5 @@
 <x-app-layout>
     <x-slot name="header">
-
         <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
@@ -30,7 +29,6 @@
                 </ul>
             </div>
         </nav>
-
     </x-slot>
 
     <!-- ISI -->
@@ -45,7 +43,6 @@
                     </div>
 
                     <div class="container py-5 h-100">
-
                         <form action="add" method="POST">
                             @csrf
 
@@ -91,7 +88,6 @@
                             </div>
 
                         </form>
-
                     </div>
                 </div>
             </div>

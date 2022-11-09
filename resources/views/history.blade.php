@@ -1,6 +1,5 @@
 <x-app-layout>
     <x-slot name="header">
-
         <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
@@ -30,18 +29,15 @@
                 </ul>
             </div>
         </nav>
-
     </x-slot>
 
 
     <!-- ISI -->
     <section class="breadcrumbs">
         <div class="container">
-
             <div class="d-flex justify-content-center align-items-center">
                 <h2 style="color: black;">History Presensi Peserta Magang</h2>
             </div>
-
         </div>
     </section>
 
@@ -84,10 +80,10 @@
                                                     <th scope="col" class="text-center">Jam Kerja</th>
                                                 </tr>
                                             </thead>
-                                            @foreach ($presensi as $item)
+                                            @foreach (auth()->user()->presensi as $item)
                                             <tr class="text-center">
                                                 <td>{{ $loop->iteration }}</td>
-                                                <td>{{ $item->user->name }}</td>
+                                                <td>{{ auth()->user()->name }}</td>
                                                 <td>{{ $item->tgl }}</td>
                                                 <td>{{ $item->jam_masuk }}</td>
                                                 <td>{{ $item->jam_keluar }}</td>
@@ -98,11 +94,9 @@
 
                                     </div>
                                 </div>
-                                <!-- container-fluid -->
                             </div>
                         </div>
                     </div>
-                    <!-- /.content -->
                 </div>
             </div>
         </div>

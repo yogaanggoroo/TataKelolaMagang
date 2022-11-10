@@ -36,9 +36,9 @@
         <div class="container">
             <div class="row justify-content-between">
                 <div
-                    class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start pt-3">
+                    class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start pt-3">
                     <div class="hero-text pt-lg-5">
-                        <h1 class="txt-header">MONITORING MAGANG PT PLN (PERSERO)</h1>
+                        <h1 class="txt-header">PROGRAM MAGANG PT PLN (PERSERO)</h1>
                         <p class="txt-hero pt-2">Suatu program belajar secara
                             langsung pada PT PLN (Persero) sekaligus berlatih bekerja secara langsung selama beberapa
                             waktu</p>
@@ -70,7 +70,6 @@
                                     4. Mendapatkan sertifikat
                                 </p>
                             </div>
-
                         </div>
                     </div>
                 </div>

@@ -20,6 +20,14 @@
                 <a class="navbar-brand" href="#">
                     <img src="/img/logo_pln1.png" alt="Logo PLN" width="100">
                 </a>
+                <div class="collapse navbar-collapse" id="navbar">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
+                            {{ __('Buku Panduan') }}
+                        </a>
+                    </div>
+                  </div>
+
             </div>
         </nav>
     </header>
@@ -92,7 +100,7 @@
         <footer>
 
             <div class="copyright p-3 text-white">
-                PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
+                PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
             </div>
 
         </footer>

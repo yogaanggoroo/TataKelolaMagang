@@ -11,15 +11,32 @@
                     </a>
                 </div>
 
+                <!-- <nav>
+                    <div class="" id="navbarDown">
+                        <ul class="nav justify-content-center">
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
+                                    style="color: #5F5F5F;">{{ __('Guideline') }}</a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav> -->
+
                 <!-- Navigation Links -->
-                <!-- <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-jet-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
-                        {{ __('Dashboard') }}
-                    </x-jet-nav-link>
+                <!-- <div class="hidden sm:flex sm:items-center sm:ml-6">
+                    <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')" style="color: white;">
+                        {{ __('Buku Panduan') }}
+                    </a>
                 </div> -->
             </div>
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
+
+                <div class="nav hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
+                        {{ __('Buku Panduan') }}
+                    </a>
+                </div>
 
                 <!-- Teams Dropdown -->
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())

@@ -48,9 +48,9 @@
         <div class="vh-100 container">
             <div class="justify-content-center col-md-8 offset-md-2">
                 <div class="card card-info card-outline">
-                    <div class="card-header text-center">
+                   <!-- <div class="card-header text-center">
                         <h2 style="color: black;">History Presensi Peserta Magang</h2>
-                    </div>
+                    </div> -->
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="">

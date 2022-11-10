@@ -21,6 +21,14 @@
     <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #0E4770">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="/img/logo_pln1.png" alt="Logo PLN" , width="100"></a>
+            <div class="collapse navbar-collapse" id="navbar">
+                <div class="navbar-nav">
+                    <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
+                        {{ __('Buku Panduan') }}
+                    </a>
+                </div>
+              </div>
+
             <!-- <div class="justify-content-end" id="navbarNav">
              @if (Route::has('login'))
                 <div class="">
@@ -66,7 +74,7 @@
     <footer>
 
         <div class="copyright text-centr p-3 text-white">
-            PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
+            PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
         </div>
 
     </footer>

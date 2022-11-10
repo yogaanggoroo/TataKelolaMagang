@@ -12,6 +12,10 @@ ul.nav a:hover {
     color:#5F5F5F  !important;
 }
 
+.nav .nav-link:hover {
+    color: #969595 !important;
+}
+
 .card-body .header-login {
     font-size: 30px;
 }

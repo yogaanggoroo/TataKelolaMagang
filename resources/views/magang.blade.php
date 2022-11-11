@@ -1,7 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-
-        <nav>
+        <!-- <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -29,15 +28,16 @@
                     </li>
                 </ul>
             </div>
-        </nav>
-
+        </nav> -->
 
     </x-slot>
 
     <!-- ISI -->
     <div class="pt-sm-4">
         <div class="container-sm card text-center">
-            <h4 class="card-header text-center">PROGRAM MAGANG PT PLN (PERSERO)</h4>
+            <div class="card-header text-center">
+                <h4 style="color: black;">PROGRAM MAGANG PT PLN (PERSERO)</h4>
+            </div>
             <div class="card-body">
                 <p class="card-text">PT PLN (Persero) membuka kesempatan kepada seluruh Warga Negara Indonesia yang
                     berstatus mahasiswa tingkat akhir atau lulusan baru Perguruan Tinggi Negeri maupun Swasta serta

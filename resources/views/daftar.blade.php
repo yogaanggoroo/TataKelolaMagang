@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <nav>
+        <!-- <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
     </x-slot>
 
     <!-- ISI -->
@@ -36,10 +36,12 @@
     <section class="breadcrumbs">
         <div class="container">
 
-            <div class="d-flex justify-content-center align-items-center">
-                <h2 style="color: black;">Isi & Unggah Berkas</h2>
+            <div class="d-flex justify-end align-items-center">
+                <ol>
+                  <li><a href="{{ route('magang') }}">Magang</a></li>
+                  <li>Daftar</li>
+                </ol>
             </div>
-
         </div>
     </section>
 
@@ -51,6 +53,9 @@
                         <form action="addss" class="mt-5 border p-4 bg-light shadow" method="POST">
                             @csrf
 
+                            <div class="card-header text-center">
+                                <h4 style="color: black;">Isi & Unggah Berkas</h4>
+                            </div>
                             <div class="row">
                                 <div class="mb-3 col-md-12">
                                     <label for="email" class="">Email<span class="text-danger">*</label>

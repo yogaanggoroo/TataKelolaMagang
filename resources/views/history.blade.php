@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <nav>
+        <!-- <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -28,15 +28,18 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
     </x-slot>
 
 
     <!-- ISI -->
     <section class="breadcrumbs">
         <div class="container">
-            <div class="d-flex justify-content-center align-items-center">
-                <h2 style="color: black;">History Presensi Peserta Magang</h2>
+            <div class="d-flex justify-end align-items-center">
+                <ol>
+                    <li><a href="{{ route('presensi') }}">Presensi</a></li>
+                    <li>History</li>
+                </ol>
             </div>
         </div>
     </section>
@@ -46,9 +49,9 @@
         <div class="vh-100 container">
             <div class="justify-content-center col-md-8 offset-md-2">
                 <div class="card card-info card-outline">
-                    <!-- <div class="card-header text-center">
+                    <div class="card-header text-center">
                         <h2 style="color: black;">History Presensi Peserta Magang</h2>
-                    </div> -->
+                    </div>
                     <div class="card-body">
                         <div class="row justify-content-center">
                             <div class="">

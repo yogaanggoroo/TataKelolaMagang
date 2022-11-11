@@ -1,7 +1,7 @@
 <x-app-layout>
     <x-slot name="header">
 
-        <nav>
+        <!-- <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -29,7 +29,7 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
 
     </x-slot>
 

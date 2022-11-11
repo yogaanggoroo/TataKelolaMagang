@@ -24,7 +24,7 @@
             }
         </style>
 
-        <nav>
+        <!-- <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -52,10 +52,23 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
     </x-slot>
 
     <!-- ISI -->
+
+    <section class="breadcrumbs">
+        <div class="container">
+
+            <div class="d-flex justify-end align-items-center">
+                <ol>
+                  <li><a href="{{ route('presensi') }}">Presensi</a></li>
+                  <li>Check-In</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
     <div class="pt-sm-5">
         <!-- Main content -->
         <div class="vh-100 container ">

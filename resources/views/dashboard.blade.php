@@ -1,6 +1,6 @@
 <x-app-layout>
     <x-slot name="header">
-        <nav>
+        <!-- <nav>
             <div class="" id="navbarDown">
                 <ul class="nav justify-content-center">
                     <li class="nav-item">
@@ -28,7 +28,7 @@
                     </li>
                 </ul>
             </div>
-        </nav>
+        </nav> -->
     </x-slot>
 
     </-- ISI -->
@@ -39,10 +39,10 @@
                     class="col-lg-5 order-2 order-lg-1 d-flex flex-column justify-content-center align-items-center align-items-lg-start text-center text-lg-start pt-3">
                     <div class="hero-text pt-lg-5">
                         <h1 class="txt-header">PROGRAM MAGANG PT PLN (PERSERO)</h1>
-                        <p class="txt-hero pt-2">Suatu program belajar secara
+                        <p class="txt-hero pt-2">Suatu program belajar atau praktek secara
                             langsung pada PT PLN (Persero) sekaligus berlatih bekerja secara langsung selama beberapa
-                            waktu</p>
-                        <div class="d-flex pt-2">
+                            waktu bisa memahami sistem kerja dunia profesional yang sebenarnya.</p>
+                        <div class="d-flex pt-3">
                             <a href="{{ route('magang') }}" :active="request()->routeIs('magang')"
                                 class="btn-registration">{{ __('Daftar Magang') }}</a>
                         </div>
@@ -59,7 +59,6 @@
                     <div class="card"
                         style="border-radius: 25px; background-color: #0E4770;">
                         <div class="card-body p-md-5">
-
                             <h2 class="txt-content mb-4 pb-2 pb-md-0 mb-md-5 text-center">
                                 Kenapa harus mengikuti Program <br> Magang
                                 PT PLN (Persero)</h2>

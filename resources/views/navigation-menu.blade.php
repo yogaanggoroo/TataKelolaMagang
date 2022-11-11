@@ -1,7 +1,7 @@
 <nav x-data="{ open: false }" class="sticky-top" style="background-color: #0E4770;">
     <!-- Primary Navigation Menu -->
     <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div class="flex justify-between h-16">
+        <div class="d-flex justify-content-between h-16">
             <div class="flex">
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
@@ -16,7 +16,7 @@
                         <ul class="nav justify-content-center">
                             <li class="nav-item">
                                 <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
-                                    style="color: #5F5F5F;">{{ __('Guideline') }}</a>
+                                    style="color: white;">{{ __('Guideline') }}</a>
                             </li>
                         </ul>
                     </div>
@@ -33,9 +33,34 @@
             <div class="hidden sm:flex sm:items-center sm:ml-6">
 
                 <div class="nav hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
-                        {{ __('Buku Panduan') }}
-                    </a>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
+                                style="color: white;">{{ __('Beranda') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
+                                style="color: white;">{{ __('Magang') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
+                                style="color: white;">{{ __('Presensi') }}</a>
+                        </li <li class="nav-item">
+                        <a class="nav-link" href="{{ route('laporan') }}" :active="request()->routeIs('laporan')"
+                            style="color: white;">{{ __('Laporan') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('tugas') }}" :active="request()->routeIs('tugas')"
+                                style="color: white;">{{ __('Tugas') }}</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('sertifikat') }}" :active="request()->routeIs('sertifikat')"
+                                style="color: white;">{{ __('Sertifikat') }}</a>
+                        </li>
+                        <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
+                            {{ __('Buku Panduan') }}
+                        </a>
+                    </ul>
                 </div>
 
                 <!-- Teams Dropdown -->

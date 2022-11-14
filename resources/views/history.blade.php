@@ -1,41 +1,10 @@
 <x-app-layout>
-    <x-slot name="header">
-        <!-- <nav>
-            <div class="" id="navbarDown">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
-                            style="color: #5F5F5F;">{{ __('Beranda') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
-                            style="color: #5F5F5F;">{{ __('Magang') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
-                            style="color: #5F5F5F;">{{ __('Presensi') }}</a>
-                    </li <li class="nav-item">
-                    <a class="nav-link" href="{{ route('laporan') }}" :active="request()->routeIs('laporan')"
-                        style="color: #5F5F5F;">{{ __('Laporan') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tugas') }}" :active="request()->routeIs('tugas')"
-                            style="color: #5F5F5F;">{{ __('Tugas') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('sertifikat') }}" :active="request()->routeIs('sertifikat')"
-                            style="color: #5F5F5F;">{{ __('Sertifikat') }}</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-    </x-slot>
-
+    <x-slot name="header"></x-slot>
 
     <!-- ISI -->
     <section class="breadcrumbs">
         <div class="container">
-            <div class="d-flex justify-end align-items-center">
+            <div class="d-flex justify-start align-items-center">
                 <ol>
                     <li><a href="{{ route('presensi') }}">Presensi</a></li>
                     <li>History</li>
@@ -83,7 +52,7 @@
                                                     <th scope="col" class="text-center">Jam Kerja</th>
                                                 </tr>
                                             </thead>
-                                            @foreach (auth()->user()->presensi as $item)
+                                            @foreach ($presensi as $item)
                                             <tr class="text-center">
                                                 <td>{{ $loop->iteration }}</td>
                                                 <td>{{ auth()->user()->name }}</td>
@@ -95,6 +64,9 @@
                                             @endforeach
                                         </table>
 
+                                        <div class="bebas">
+                                            {{ $presensi->links() }}
+                                        </div>
                                     </div>
                                 </div>
                             </div>

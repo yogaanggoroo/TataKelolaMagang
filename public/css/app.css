@@ -8,12 +8,8 @@ body {
     min-height: 100vh;
 }
 
-ul.nav a:hover {
-    color:#5F5F5F  !important;
-}
-
 .nav .nav-link:hover {
-    color: #bfbdbd !important;
+    color: #d3d1d1 !important;
 }
 
 .card-body .header-login {
@@ -22,7 +18,7 @@ ul.nav a:hover {
 
 .hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/IndonesiaPLN.jpg");
-    height: 730px;
+    height: 710px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -139,7 +135,6 @@ h1 {
 }
 
 .container .btn-history:hover {
-    background-color: #043c65 !important;
     color: white;
 }
 
@@ -203,4 +198,11 @@ footer {
 
   }
 
-
+  /*--------------------------------------------------------------
+# Responsive Website
+--------------------------------------------------------------*/
+@media (max-width: 450px) {
+    .card-text #manfaat-magang {
+        display: grid;
+    }
+  }

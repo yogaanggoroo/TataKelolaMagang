@@ -1,37 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">
-
-        <!-- <nav>
-            <div class="" id="navbarDown">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
-                            style="color: #5F5F5F;">{{ __('Beranda') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
-                            style="color: #5F5F5F;">{{ __('Magang') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
-                            style="color: #5F5F5F;">{{ __('Presensi') }}</a>
-                    </li <li class="nav-item">
-                    <a class="nav-link" href="{{ route('laporan') }}" :active="request()->routeIs('laporan')"
-                        style="color: #5F5F5F;">{{ __('Laporan') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tugas') }}" :active="request()->routeIs('tugas')"
-                            style="color: #5F5F5F;">{{ __('Tugas') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('sertifikat') }}" :active="request()->routeIs('sertifikat')"
-                            style="color: #5F5F5F;">{{ __('Sertifikat') }}</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-
-    </x-slot>
+    <x-slot name="header"></x-slot>
 
     <!-- ISI -->
     <div class="vh-100 pt-sm-4">
@@ -54,13 +22,13 @@
                                 <div class="form-outline w-100">
                                     <label class="" for="namaLengkap">Nama Lengkap</label>
                                     <input type="text" id="namaLengkap" class="form-control" name="name"
-                                        placeholder="Masukkan nama lengkap" />
+                                        placeholder="Masukkan nama lengkap" required />
                                 </div>
 
                                 <div class="form-outline pt-3">
                                     <label class="" for="divisi">Divisi</label>
                                     <input type="text" id="divisi" class="form-control" name="division"
-                                        placeholder="Masukkan divisi" />
+                                        placeholder="Masukkan divisi" required />
                                 </div>
 
                             </div>
@@ -69,7 +37,7 @@
 
                                 <div class="form-outline w-100 pt-3">
                                     <label class="" for="tanggalTugas">Tanggal</label>
-                                    <input type="date" id="tanggalTugas" class="form-control" name="date" />
+                                    <input type="date" id="tanggalTugas" class="form-control" name="date" required />
                                 </div>
 
                             </div>
@@ -79,7 +47,7 @@
 
                                 <div class="form-outline w-100 pt-3">
                                     <label class="" for="uploadTugas">Upload Tugas</label>
-                                    <input type="file" class="form-control" id="uploadTugas" name="upload" />
+                                    <input type="file" class="form-control" id="uploadTugas" name="upload" required />
                                 </div>
 
                             </div>

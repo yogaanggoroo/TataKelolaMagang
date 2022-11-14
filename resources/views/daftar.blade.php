@@ -1,42 +1,12 @@
 <x-app-layout>
-    <x-slot name="header">
-        <!-- <nav>
-            <div class="" id="navbarDown">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
-                            style="color: #5F5F5F;">{{ __('Beranda') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
-                            style="color: #5F5F5F;">{{ __('Magang') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
-                            style="color: #5F5F5F;">{{ __('Presensi') }}</a>
-                    </li <li class="nav-item">
-                    <a class="nav-link" href="{{ route('laporan') }}" :active="request()->routeIs('laporan')"
-                        style="color: #5F5F5F;">{{ __('Laporan') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tugas') }}" :active="request()->routeIs('tugas')"
-                            style="color: #5F5F5F;">{{ __('Tugas') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('sertifikat') }}" :active="request()->routeIs('sertifikat')"
-                            style="color: #5F5F5F;">{{ __('Sertifikat') }}</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-    </x-slot>
+    <x-slot name="header"></x-slot>
 
     <!-- ISI -->
 
     <section class="breadcrumbs">
         <div class="container">
 
-            <div class="d-flex justify-end align-items-center">
+            <div class="d-flex justify-start align-items-center">
                 <ol>
                   <li><a href="{{ route('magang') }}">Magang</a></li>
                   <li>Daftar</li>
@@ -65,52 +35,52 @@
                                 <div class="mb-3 col-md-12">
                                     <label for="name" class="">Nama Lengkap<span class="text-danger">*</label>
                                     <input type="text" id="name" class="form-control" name="name"
-                                        placeholder="Masukkan nama lengkap" required autofocus />
+                                        placeholder="Masukkan nama lengkap" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="gender" class="">Jenis Kelamin<span class="text-danger">*</label>
                                     <input type="text" id="gender" class="form-control" name="gender"
-                                        placeholder="Masukkan jenis kelamin" required autofocus />
+                                        placeholder="Masukkan jenis kelamin" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="number" class="">Nomor Telepon<span class="text-danger">*</label>
                                     <input type="text" id="number" class="form-control" name="phone"
-                                        placeholder="Masukkan Nomor Telepon" required autofocus />
+                                        placeholder="Masukkan Nomor Telepon" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="address" class="">Alamat Kampus<span class="text-danger">*</label>
                                     <input type="text" id="address" class="form-control" name="address"
-                                        placeholder="Masukkan alamat kampus" required autofocus />
+                                        placeholder="Masukkan alamat kampus" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="fotoTerbaru" class="">Pas Foto Terbaru<span
                                             class="text-danger">*</label>
                                     <input type="file" accept="image/*" capture="camera" class="form-control"
-                                        name="image" id="fotoTerbaru" required autofocus />
+                                        name="image" id="fotoTerbaru" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="proposalMagang" class="">Proposal Magang<span
                                             class="text-danger">*</label>
                                     <input type="file" class="form-control" name="upload_proposal" id="proposalMagang"
-                                        required autofocus />
+                                        required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="suratRekomendasi" class="">Surat Rekomendasi Magang<span
                                             class="text-danger">*</label>
                                     <input type="file" class="form-control" name="upload_rekomendasi"
-                                        id="suratRekomendasi" required autofocus />
+                                        id="suratRekomendasi" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="curriculumVitae" class="">Curriculum Vitae (CV)<span
                                             class="text-danger">*</label>
                                     <input type="file" class="form-control" name="upload_cv" id="curriculumVitae"
-                                        required autofocus />
+                                        required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="transkripNilai" class="">Transkrip Nilai<span
                                             class="text-danger">*</label>
                                     <input type="file" class="form-control" name="upload_nilai" id="transkripNilai"
-                                        required autofocus />
+                                        required />
                                 </div>
                                 <div class="mb-3 col-md-12">
                                     <label for="portFolio" class="">Portfolio<span class="text-danger">*</label>

@@ -16,9 +16,6 @@ class PresensiController extends Controller
      */
     public function index()
     {
-        //$pagination = 2;
-        //$presensi = Presensi::paginate($pagination);
-
         return view('masuk');
     }
 
@@ -56,7 +53,7 @@ class PresensiController extends Controller
         ])->first();
         if ($presensi){
             //dd("sudah melakukan presensi");
-            return redirect('masuk')->with('info', 'Anda sudah melakukan presensi masuk!');
+            return redirect('masuk')->with('toast_info', 'Anda sudah melakukan presensi masuk!');
         }else{
             Presensi::create([
                 'user_id' => auth()->user()->id,
@@ -87,22 +84,9 @@ class PresensiController extends Controller
      */
     public function tampildatakeseluruhan($tglawal, $tglakhir)
     {
-        //$pagination = 2;
-        //$presensi = Presensi::paginate($pagination);
-        //$presensi = Presensi::all();
-        //$presensi = Presensi::paginate(2);
-        $presensi = Presensi::with('user')->whereBetween('tgl',[$tglawal, $tglakhir])->orderBy('tgl','asc')->get();
+        $presensi = Presensi::with('user')->whereBetween('tgl',[$tglawal, $tglakhir])->orderBy('tgl','asc')->paginate(5);
         return view('history',compact('presensi'));
-        //return view('history',compact('presensi'));
-        //return view('history', [presensiList => presensi ]);
-
     }
-
-    /* public function tampildatakeseluruhan($tglawal, $tglakhir)
-    {
-        $presensi = Presensi::where('user', auth()->user());
-        return view('history', compact('presensi'));
-    } */
 
     public function presensipulang() {
         $timezone = 'Asia/Jakarta';
@@ -125,7 +109,7 @@ class PresensiController extends Controller
             return redirect('keluar')->with('success', 'Selamat beraktivitas!');
         }else{
            // dd("Sudah melakukan presensi keluar");
-            return redirect('keluar')->with('info', 'Anda sudah melakukan presensi keluar!');
+            return redirect('keluar')->with('toast_info', 'Anda sudah melakukan presensi keluar!');
         }
     }
 

@@ -1,37 +1,5 @@
 <x-app-layout>
-    <x-slot name="header">
-
-        <!-- <nav>
-            <div class="" id="navbarDown">
-                <ul class="nav justify-content-center">
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')"
-                            style="color: #5F5F5F;">{{ __('Beranda') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
-                            style="color: #5F5F5F;">{{ __('Magang') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
-                            style="color: #5F5F5F;">{{ __('Presensi') }}</a>
-                    </li <li class="nav-item">
-                    <a class="nav-link" href="{{ route('laporan') }}" :active="request()->routeIs('laporan')"
-                        style="color: #5F5F5F;">{{ __('Laporan') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('tugas') }}" :active="request()->routeIs('tugas')"
-                            style="color: #5F5F5F;">{{ __('Tugas') }}</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('sertifikat') }}" :active="request()->routeIs('sertifikat')"
-                            style="color: #5F5F5F;">{{ __('Sertifikat') }}</a>
-                    </li>
-                </ul>
-            </div>
-        </nav> -->
-
-    </x-slot>
+    <x-slot name="header"></x-slot>
 
     <!-- ISI -->
     <div class="pt-sm-4">
@@ -81,8 +49,8 @@
                             style="background-color: #0E4770; color: white;">History</button> -->
 
                         <a href="{{ route('halaman-history') }}" :active="request()->routeIs('halaman-history')"
-                            class="btn btn-history"
-                            style="background-color: #0E4770; color: white;">{{ __('History') }}</a>
+                            class="btn btn-primary btn-history"
+                            style="color: white;">{{ __('History') }}</a>
                     </div>
                 </div>
             </div>

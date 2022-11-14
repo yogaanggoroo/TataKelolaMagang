@@ -16,7 +16,7 @@
                     {{ __('You have enabled two factor authentication.') }}
                 @endif
             @else
-                {{ __('You have not enabled two factor authentication.') }}
+                {{ __('Anda belum mengaktifkan otentikasi dua faktor.') }}
             @endif
         </h3>
 

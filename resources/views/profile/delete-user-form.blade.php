@@ -4,7 +4,7 @@
     </x-slot>
 
     <x-slot name="description">
-        {{ __('Permanently delete your account.') }}
+        {{ __('Hapus akun Anda secara permanen.') }}
     </x-slot>
 
     <x-slot name="content">

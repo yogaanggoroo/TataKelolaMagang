@@ -79,7 +79,7 @@
                                 <div class="d-grid pt-5">
                                     <button type="submit" class="btn btn-block mb-3"
                                         style="background-color: #0E4770; color: white;">
-                                        {{ __('Log in') }}
+                                        {{ __('Login') }}
                                     </button>
                                 </div>
 

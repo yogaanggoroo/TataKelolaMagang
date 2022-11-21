@@ -15,7 +15,7 @@
 
     <div class="pt-sm-5">
         <!-- Main content -->
-        <div class="vh-100 container">
+        <div class="container">
             <div class="justify-content-center col-md-8 offset-md-2">
                 <div class="card card-info card-outline">
                     <div class="card-header text-center">
@@ -52,9 +52,9 @@
                                                     <th scope="col" class="text-center">Jam Kerja</th>
                                                 </tr>
                                             </thead>
-                                            @foreach ($presensi as $item)
+                                            @foreach (auth()->user()->presensi as $key => $item)
                                             <tr class="text-center">
-                                                <td>{{ $loop->iteration }}</td>
+                                                <td>{{ $presensi->firstItem() + $key}}</td>
                                                 <td>{{ auth()->user()->name }}</td>
                                                 <td>{{ $item->tgl }}</td>
                                                 <td>{{ $item->jam_masuk }}</td>
@@ -64,7 +64,7 @@
                                             @endforeach
                                         </table>
 
-                                        <div class="bebas">
+                                        <div class="">
                                             {{ $presensi->links() }}
                                         </div>
                                     </div>

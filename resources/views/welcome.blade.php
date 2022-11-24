@@ -60,17 +60,11 @@
                         @auth
                             <a href="{{ url('/dashboard') }}" class="btn-registration">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="btn-registration">User</a>
+                            <a href="{{ route('login') }}" class="btn-registration">Login</a>
 
-                            @if(Route::has('login'))
-                            <a href="{{ route('admin.login') }}" class="btn-registration">Admin</a>
-
-                            @endif
-
-                            <!--
                             @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="btn-registration">Register</a>
-                            @endif -->
+                            @endif
                         @endauth
                     </div>
                 @endif

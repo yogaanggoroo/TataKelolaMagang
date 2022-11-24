@@ -1,5 +1,9 @@
 <x-app-layout>
-    <x-slot name="header"></x-slot>
+    <x-slot name="header">
+        <h2 class="font-semibold text-xl text-gray-800 leading-tight">
+            {{ __('Dashboard Participant') }}
+        </h2>
+    </x-slot>
 
     </-- ISI -->
     <div class="hero-image">

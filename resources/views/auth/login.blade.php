@@ -45,7 +45,7 @@
                                     height="46">
                             </div>
 
-                            <form method="POST" action="{{ isset($guard) ? url($guard.'/login') : route('login') }}">
+                            <form method="POST" action="{{ route('login') }}">
                                 @csrf
 
                                 <div class="form-outline mb-4">

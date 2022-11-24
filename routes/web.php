@@ -1,6 +1,5 @@
 <?php
 
-use App\Http\Controllers\AdminController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TaskController;
@@ -22,19 +21,38 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::group(['prefix'=> 'admin', 'middleware'=>['admin:admin']], function(){
-    Route::get('/login', [AdminController::class, 'loginForm']);
-    Route::post('/login', [AdminController::class, 'store'])->name('admin.login');
-});
-
 Route::middleware([
-    'auth:sanctum,admin',
+    'auth:sanctum',
     config('jetstream.auth_session'),
     'verified'
 ])->group(function () {
-    Route::get('/admin/home', function () {
-        return view('home');
-    })->name('home');
+    Route::get('/admin/dashboard', function () {
+        return view('admin-dashboard');
+    })->name('admin-dashboard');
+
+    Route::get('/admin/participant', function () {
+        return view('admin-participant');
+    })->name('admin-participant');
+
+    Route::get('/admin/presence', function () {
+        return view('admin-presence');
+    })->name('admin-presence');
+
+    Route::get('/admin/report', function () {
+        return view('admin-report');
+    })->name('admin-report');
+
+    Route::get('/admin/project', function () {
+        return view('admin-project');
+    })->name('admin-project');
+
+    Route::get('/admin/evaluation', function () {
+        return view('admin-evaluation');
+    })->name('admin-evaluation');
+
+    Route::get('/admin/certificate', function () {
+        return view('admin-certificate');
+    })->name('admin-certificate');
 });
 
 Route::middleware([

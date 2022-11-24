@@ -32,9 +32,15 @@
 
             <div class="hidden sm:flex sm:items-center sm:ml-6">
 
-            @if(auth()->user()->level=="user")
                 <div class="nav hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                    <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
+                        {{ __('Buku Panduan') }}
+                    </a>
+                </div>
+
+                <!-- <div class="nav hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <ul class="nav">
+                        @if (auth()->user()->level == "user")
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('dashboard') }}"
                                 :active="request()->routeIs('dashboard')" style="color: white;">{{ __('Beranda') }}</a>
@@ -63,16 +69,16 @@
                         <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
                             {{ __('Buku Panduan') }}
                         </a>
+                        @endif
                     </ul>
-                </div>
-            @endif
+                </div> -->
 
-
-                <div class="nav hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
+                <!-- <div class="nav hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <ul class="nav">
+
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('dashboard') }}"
-                                :active="request()->routeIs('dashboard')" style="color: white;">{{ __('Home') }}</a>
+                                :active="request()->routeIs('dashboard')" style="color: white;">{{ __('Beranda') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
@@ -98,8 +104,9 @@
                         <a class="nav-link" href="/pdf/buku-panduan.pdf" style="color: white;">
                             {{ __('Buku Panduan') }}
                         </a>
+
                     </ul>
-                </div>
+                </div> -->
 
                 <!-- Teams Dropdown -->
                 @if (Laravel\Jetstream\Jetstream::hasTeamFeatures())

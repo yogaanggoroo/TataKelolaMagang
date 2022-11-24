@@ -15,8 +15,14 @@ class LoginResponse implements LoginResponseContract
      */
     public function toResponse($request)
     {
+        if(auth()->user()->is_admin){
+            return $request->wantsJson()
+            ? response()->json(['two_factor' => false])
+            : redirect()->route('admin-dashboard');
+        }
+
         return $request->wantsJson()
-                    ? response()->json(['two_factor' => false])
-                    : redirect()->intended(Fortify::redirects('/admin/home'));
+        ? response()->json(['two_factor' => false])
+        : redirect()->intended(config('fortify.dashboard'));
     }
 }

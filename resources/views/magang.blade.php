@@ -1,5 +1,7 @@
 <x-app-layout>
-    <x-slot name="header"></x-slot>
+    <x-slot name="header">
+        @include('template.navbar-user')
+    </x-slot>
 
     <!-- ISI -->
     <div class="pt-sm-4">

@@ -1,6 +1,8 @@
 <x-app-layout>
     <x-slot name="header">
 
+        @include('template.navbar-user')
+
         <script src="{{  asset('js/jam.js') }}"></script>
         <style>
             #watch {

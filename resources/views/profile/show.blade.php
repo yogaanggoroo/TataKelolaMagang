@@ -7,7 +7,7 @@
             <div class="d-flex justify-content-between align-items-center">
                 <h2 style="color: black;">Profil</h2>
                 <ol>
-                    <li><a href="{{ route('dashboard') }}">Beranda</a></li>
+                    <li><a href="{{ route('admin-dashboard') }}">Beranda</a></li>
                     <li>Profil</li>
                 </ol>
             </div>

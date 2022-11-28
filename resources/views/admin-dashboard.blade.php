@@ -24,11 +24,6 @@
         </div>
     </div>
 
-    <footer>
-
-        <div class="copyright p-3 text-white">
-            PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
-        </div>
-
-    </footer>
+    <!-- Footer -->
+    @include('template.footer')
 </x-app-layout>

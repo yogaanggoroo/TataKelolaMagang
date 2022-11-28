@@ -25,7 +25,6 @@ return new class extends Migration
             $table->string('upload_rekomendasi')->required();
             $table->string('upload_cv')->required();
             $table->string('upload_nilai')->required();
-            $table->string('upload_portfolio');
             $table->timestamps();
         });
     }

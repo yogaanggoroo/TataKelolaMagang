@@ -8,9 +8,7 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
         <link rel="icon" type="image/png" href="/img/logo_pln2.png">
         <title>Aplikasi Monitoring Magang</title>
-
-        <!-- Fonts -->
-        <!-- <link href="https://fonts.bunny.net/css2?family=Nunito:wght@400;600;700&display=swap" rel="stylesheet"> -->
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <!-- Styles -->
         <style>
@@ -18,6 +16,7 @@
         </style>
 
     </head>
+
     <nav id="navbar" class="navbar navbar-expand-lg" style="background-color: #0E4770">
         <div class="container">
             <a class="navbar-brand" href="#"><img src="/img/logo_pln1.png" alt="Logo PLN" , width="100"></a>
@@ -51,25 +50,25 @@
         <!-- ======= Hero Section ======= -->
         <section id="hero" class="vh-100 d-flex align-items-center hero-image">
             <div class="container text-center position-relative text-white">
-                <h1>APLIKASI MONITORING MAGANG PT PLN (PERSERO)</h1>
-                <h6>Suatu program belajar secara
+                <h1 data-aos="zoom-in">APLIKASI MONITORING MAGANG PT PLN (PERSERO)</h1>
+                <h6 data-aos="zoom-in">Suatu program belajar secara
                     langsung pada PT PLN (Persero) sekaligus berlatih bekerja secara langsung selama beberapa
                     waktu</h6>
                     @if (Route::has('login'))
-                    <div class="pt-4">
+                    <div data-aos="zoom-in" class="pt-4">
                         @auth
                             <a href="{{ url('/dashboard') }}" class="btn-registration">Dashboard</a>
                         @else
-                            <a href="{{ route('login') }}" class="btn-registration">Login</a>
+                            <a href="{{ route('login') }}" data-aos="zoom-in" class="btn-registration">Login</a>
 
                             @if (Route::has('register'))
-                                <a href="{{ route('register') }}" class="btn-registration">Register</a>
+                                <a href="{{ route('register') }}" data-aos="zoom-in" class="btn-registration">Register</a>
                             @endif
                         @endauth
                     </div>
                 @endif
             </div>
-        </section><!-- End Hero -->
+        </section> <!-- End Hero -->
 
     <footer>
 
@@ -78,5 +77,9 @@
         </div>
 
     </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     </body>
 </html>

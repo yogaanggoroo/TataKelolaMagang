@@ -44,7 +44,7 @@
     <div class="pt-sm-5">
         <!-- Main content -->
         <div class="vh-100 container ">
-            <div class="justify-content-center">
+            <div data-aos="zoom-in" class="justify-content-center">
                 <div class="card card-info card-outline">
                     <div class="card-header text-center">
                         <h2 style="color: black;">Presensi Masuk</h2>
@@ -78,7 +78,6 @@
         <!-- /.content -->
     </div>
     <!-- /.content-wrapper -->
-
 
     <!-- Footer -->
     @include('template.footer')

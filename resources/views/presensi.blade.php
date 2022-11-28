@@ -5,7 +5,7 @@
 
     <!-- ISI -->
     <div class="pt-sm-4">
-        <div class="container-sm card">
+        <div data-aos="fade-right" class="container-sm card">
             <div class="container hero-text pt-lg-3">
                 <img src="/img/welcome.svg" class="float-end" alt="welcome">
                 <h1>Selamat Datang Peserta!</h1>
@@ -15,7 +15,7 @@
     </div>
 
     <div class="pt-sm-4">
-        <div class="container-sm card">
+        <div data-aos="fade-left" class="container-sm card">
             <div class="container pt-lg-3">
                 <div class="pt-sm-1">
                     <div class="card-header" style="background-color: #0E4770;">

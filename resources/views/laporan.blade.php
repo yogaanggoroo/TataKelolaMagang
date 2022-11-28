@@ -5,7 +5,7 @@
 
     <!-- ISI -->
     <div class="vh-100 pt-sm-4">
-        <div class="container-sm card">
+        <div data-aos="zoom-in" class="container-sm card">
             <div class="container pt-lg-3">
                 <div class="pt-sm-1">
                     <div class="card-header" style="background-color: #0E4770;">

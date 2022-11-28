@@ -18,7 +18,7 @@
     </section>
 
     <div class="">
-        <div class="container">
+        <div data-aos="zoom-in-up" class="container">
             <div class="row">
                 <div class="col-md-6 offset-md-3">
                     <div class="">
@@ -55,6 +55,20 @@
                                         placeholder="Masukkan alamat kampus" required />
                                 </div>
                                 <div class="mb-3 col-md-12">
+                                    <label for="division" class="">Divisi<span class="text-danger">*</label>
+                                    <select name="division" class="form-control" id="">
+                                        <option selected disabled>Please Select Division</option>
+                                            <option value="keuangan">Keuangan</option>
+                                            <option value="anggaran">Anggaran</option>
+                                            <option value="akuntansi">Akuntansi</option>
+                                            <option value="pengembangan talenta">Pengembangan Talenta</option>
+                                            <option value="sistem dan teknologi informasi">Sistem dan Teknologi Informasi</option>
+                                            <option value="risk management">Risk Management</option>
+                                            <option value="pengelolaan aset">Pengelolaan Aset</option>
+                                            <option value="hukum korporat">Hukum Korporat</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3 col-md-12">
                                     <label for="fotoTerbaru" class="">Pas Foto Terbaru<span
                                             class="text-danger">*</label>
                                     <input type="file" accept="image/*" capture="camera" class="form-control"
@@ -84,11 +98,6 @@
                                     <input type="file" class="form-control" name="upload_nilai" id="transkripNilai"
                                         required />
                                 </div>
-                                <div class="mb-3 col-md-12">
-                                    <label for="portFolio" class="">Portfolio<span class="text-danger">*</label>
-                                    <input type="file" class="form-control" name="upload_portfolio" id="portFolio" />
-                                </div>
-
                                 <div class="col-md-12">
                                     <button class="btn float-end" id="submit" type='submit'
                                         style="background-color: #0E4770; color: white;">Submit</button>

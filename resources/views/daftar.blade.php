@@ -57,7 +57,7 @@
                                 <div class="mb-3 col-md-12">
                                     <label for="division" class="">Divisi<span class="text-danger">*</label>
                                     <select name="division" class="form-control" id="">
-                                        <option selected disabled>Please Select Division</option>
+                                        <option selected disabled>Pilih Divisi</option>
                                             <option value="keuangan">Keuangan</option>
                                             <option value="anggaran">Anggaran</option>
                                             <option value="akuntansi">Akuntansi</option>

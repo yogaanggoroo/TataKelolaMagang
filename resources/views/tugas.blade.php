@@ -28,9 +28,18 @@
                                 </div>
 
                                 <div class="form-outline pt-3">
-                                    <label class="" for="divisi">Divisi</label>
-                                    <input type="text" id="divisi" class="form-control" name="division"
-                                        placeholder="Masukkan divisi" required />
+                                    <label for="division" class="">Divisi</label>
+                                        <select name="division" class="form-control" id="">
+                                            <option selected disabled>Pilih Divisi</option>
+                                                <option value="keuangan">Keuangan</option>
+                                                <option value="anggaran">Anggaran</option>
+                                                <option value="akuntansi">Akuntansi</option>
+                                                <option value="pengembangan talenta">Pengembangan Talenta</option>
+                                                <option value="sistem dan teknologi informasi">Sistem dan Teknologi Informasi</option>
+                                                <option value="risk management">Risk Management</option>
+                                                <option value="pengelolaan aset">Pengelolaan Aset</option>
+                                                <option value="hukum korporat">Hukum Korporat</option>
+                                        </select>
                                 </div>
 
                             </div>

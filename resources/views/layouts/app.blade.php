@@ -8,7 +8,7 @@
     <link rel="icon" type="image/png" href="/img/logo_pln2.png">
     <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/sweetalert2@7.12.15/dist/sweetalert2.min.css'>
 
-    <title>Aplikasi Tata Kelola Magang</title>
+    <title>Aplikasi-Monitoring-Magang</title>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="/css/app.css">
 

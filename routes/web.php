@@ -5,6 +5,12 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\AppliesController;
 use App\Http\Controllers\PresensiController;
+use App\Http\Livewire\Participants;
+use App\Http\Livewire\Presences;
+use App\Http\Livewire\Reports;
+use App\Http\Livewire\Assignments;
+use App\Http\Livewire\Evaluations;
+use App\Http\Livewire\Certificates;
 
 /*
 |--------------------------------------------------------------------------
@@ -30,9 +36,7 @@ Route::middleware([
         return view('admin-dashboard');
     })->name('admin-dashboard');
 
-    Route::get('/admin/participant', function () {
-        return view('admin-participant');
-    })->name('admin-participant');
+    Route::get('/admin/participant',Participants::class,)->name('admin-participant');
 
     Route::get('/admin/presence', function () {
         return view('admin-presence');

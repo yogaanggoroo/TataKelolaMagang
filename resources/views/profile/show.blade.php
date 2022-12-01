@@ -1,15 +1,10 @@
 <x-app-layout>
-    <x-slot name="header">
-    </x-slot>
+    <x-slot name="header"></x-slot>
 
     <section class="breadcrumbs">
         <div class="container">
             <div class="d-flex justify-content-between align-items-center">
                 <h2 style="color: black;">Profil</h2>
-                <ol>
-                    <li><a href="{{ route('admin-dashboard') }}">Beranda</a></li>
-                    <li>Profil</li>
-                </ol>
             </div>
         </div>
     </section>

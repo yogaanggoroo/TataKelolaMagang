@@ -5,7 +5,7 @@
 
     <!-- ISI -->
     <div class="pt-sm-4">
-        <div class="container-sm card text-center">
+        <div data-aos="zoom-in-up" class="container-sm card text-center">
             <div class="card-header text-center">
                 <h3 style="color: black;">PROGRAM MAGANG PT PLN (PERSERO)</h3>
             </div>

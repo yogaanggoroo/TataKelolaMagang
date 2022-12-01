@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="/css/login.css">
     <link rel="icon" type="image/png" href="/img/logo_pln2.png">
     <title>Login</title>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
@@ -26,7 +27,7 @@
                             {{ __('Buku Panduan') }}
                         </a>
                     </div>
-                  </div>
+                </div>
 
             </div>
         </nav>
@@ -35,7 +36,7 @@
     <!-- ISI -->
     <section class="">
         <div class="container py-3 ">
-            <div class="row justify-content-center align-items-center ">
+            <div data-aos="zoom-in" class="row justify-content-center align-items-center ">
                 <div class="col-12 col-lg-9 col-xl-6">
                     <div class="card card-registration my-lg-5" style="border-radius: 15px;">
                         <div class="card-body p-4 p-md-5">
@@ -96,19 +97,21 @@
         </div>
     </section>
 
-    <div class="">
-        <footer>
+    <footer>
 
-            <div class="copyright p-3 text-white">
-                PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
-            </div>
+        <div class="copyright p-3 text-white">
+            PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
+        </div>
 
-        </footer>
-    </div>
+    </footer>
 
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous">
+    </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
     </script>
 </body>
 

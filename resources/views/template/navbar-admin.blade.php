@@ -1,4 +1,4 @@
-<nav id="navbar" class="navbar navbar-expand-lg bg-light">
+<nav id="navbar" class="navbar navbar-expand-lg stroke">
     <div class="container">
         <div class="navbar-collapse justify-content-center" id="navbarDown">
             <ul class="nav">

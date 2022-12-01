@@ -5,7 +5,7 @@
 
     <!-- ISI -->
     <div class="vh-100 pt-sm-4">
-        <div class="container-sm card">
+        <div data-aos="zoom-in" class="container-sm card">
             <div class="container pt-lg-3">
                 <div class="pt-sm-1">
                     <div class="card-header" style="background-color: #0E4770;">
@@ -28,9 +28,18 @@
                                 </div>
 
                                 <div class="form-outline pt-3">
-                                    <label class="" for="divisi">Divisi</label>
-                                    <input type="text" id="divisi" class="form-control" name="division"
-                                        placeholder="Masukkan divisi" required />
+                                    <label for="division" class="">Divisi</label>
+                                        <select name="division" class="form-control" id="">
+                                            <option selected disabled>Pilih Divisi</option>
+                                                <option value="keuangan">Keuangan</option>
+                                                <option value="anggaran">Anggaran</option>
+                                                <option value="akuntansi">Akuntansi</option>
+                                                <option value="pengembangan talenta">Pengembangan Talenta</option>
+                                                <option value="sistem dan teknologi informasi">Sistem dan Teknologi Informasi</option>
+                                                <option value="risk management">Risk Management</option>
+                                                <option value="pengelolaan aset">Pengelolaan Aset</option>
+                                                <option value="hukum korporat">Hukum Korporat</option>
+                                        </select>
                                 </div>
 
                             </div>
@@ -45,7 +54,6 @@
                             </div>
 
                             <div class="row">
-
 
                                 <div class="form-outline w-100 pt-3">
                                     <label class="" for="uploadTugas">Upload Tugas</label>

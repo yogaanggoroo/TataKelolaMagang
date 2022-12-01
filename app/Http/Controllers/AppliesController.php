@@ -15,12 +15,12 @@ class AppliesController extends Controller
         $report->gender=$req->gender;
         $report->phone=$req->phone;
         $report->address=$req->address;
+        $report->division=$req->division;
         $report->image=$req->image;
         $report->upload_proposal=$req->upload_proposal;
         $report->upload_rekomendasi=$req->upload_rekomendasi;
         $report->upload_cv=$req->upload_cv;
         $report->upload_nilai=$req->upload_nilai;
-        $report->upload_portfolio=$req->upload_portfolio;
         $report->save();
         return redirect('daftar');
     }

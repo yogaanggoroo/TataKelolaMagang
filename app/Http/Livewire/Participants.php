@@ -102,7 +102,7 @@ class Participants extends Component
         'recommendation_letter' => 'required|mimes:docs,pdf',
         'CV' => 'required|mimes:docs,pdf',
         'transcripts' => 'required|mimes:docs,pdf',
-        'status' => 'required|mimes:docs,pdf',
+        'status' => 'required',
         'division' => 'required',
     ]);
 

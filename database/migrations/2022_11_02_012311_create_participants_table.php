@@ -26,7 +26,7 @@ return new class extends Migration
             $table->string('recommendation_letter');
             $table->string('CV');
             $table->string('transcripts');
-            $table->string('portfolio');
+            $table->string('status');
             $table->timestamps();
         });
     }

@@ -21,7 +21,7 @@ class Participant extends Model
         'recommendation_letter',
         'CV',
         'transcripts',
-        'portfolio',
+        'status',
     ];
 
     public function participant()

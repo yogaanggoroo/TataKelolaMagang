@@ -1,4 +1,4 @@
-    <x-slot name="header">
+<x-slot name="header">
     @include('template.navbar-admin')
 </x-slot>
 

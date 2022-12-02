@@ -23,7 +23,7 @@ class Certificates extends Component
     public function render()
     {
         $certificates = Certificate::orderBy('created_at', 'DESC')->paginate(3);
-        return view('livewire.certificates',['certificates' => $certificates  ]);
+        return view('livewire.admin-certificates',['certificates' => $certificates  ]);
     }
 
 

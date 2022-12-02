@@ -1,11 +1,9 @@
 <x-slot name="header">
-</style>
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Sertifikat Peserta
-    </h2>
+    @include('template.navbar-admin')
 </x-slot>
 
 <div class="py-12">
+    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8" >
     <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4" style="overflow: auto; white-space: nowrap;">
             @if (session()->has('message'))
@@ -21,25 +19,31 @@
             <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded my-3">Create</button>
 
             @if($isModal)
-                @include('livewire.certificate.create')
+                @include('livewire.presence.create')
             @endif
 
 
-            <table class="table-fixed w-full "  >
-                <thead >
+            <table class="min-w-full divide-y divide-gray-200 "  >
+                <thead class="bg-gray-50 dark:bg-gray-600 dark:text-gray-200">
                     <tr class="bg-white-100">
-                        <th >Email</th>
-                        <th >Nama</th>
-                        <th >Certificate</th>
-                        <th >Action</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Email</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Nama</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Division</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Date</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Office Hours</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Description</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Action</th>
                     </tr>
                 </thead>
                 <tbody >
-                    @forelse($certificates as $row)
+                    @forelse($presences as $row)
                         <tr>
                             <td class="border px-6 py-2">{{ $row->email }}</td>
                             <td class="border px-4 py-4">{{ $row->name }}</td>
-                            <td class="border px-4 py-2"><a href="{{ Storage::url($row->certificate) }}">Sertifikat {{ $row->name }}</td>
+                            <td class="border px-4 py-2">{{ $row->division }}</td>
+                            <td class="border px-4 py-2">{{ $row->date }}</td>
+                            <td class="border px-4 py-2">{{ $row->office_hours }}</td>
+                            <td class="border px-4 py-2">{{ $row->description }}</td>
                             <td class="border px-4 py-2">
                                 <button wire:click.prevent="edit({{ $row->id }})"  class="btn btn-sm btn-success">Edit</button>
                                 <button wire:click.prevent="delete({{ $row->id }})"  class="btn btn-sm btn-danger">Hapus</button>
@@ -53,8 +57,9 @@
                 </tbody>
             </table>
         </div>
+    </div>
         <div class="div">
-            {{ $certificates -> links() }}
+            {{ $presences -> links() }}
         </div>
     </div>
 </div>

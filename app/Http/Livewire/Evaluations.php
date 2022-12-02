@@ -22,7 +22,7 @@ class Evaluations extends Component
     public function render()
     {
         $evaluations = Evaluation::orderBy('created_at', 'DESC')->paginate(3);
-        return view('livewire.evaluations',['evaluations' => $evaluations  ]);
+        return view('livewire.admin-evaluations',['evaluations' => $evaluations  ]);
     }
 
 

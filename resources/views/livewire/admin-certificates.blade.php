@@ -1,8 +1,5 @@
 <x-slot name="header">
-</style>
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Kehadiran Peserta
-    </h2>
+    @include('template.navbar-admin')
 </x-slot>
 
 <div class="py-12">
@@ -21,7 +18,7 @@
             <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded my-3">Create</button>
 
             @if($isModal)
-                @include('livewire.presence.create')
+                @include('livewire.certificate.create')
             @endif
 
 
@@ -30,22 +27,16 @@
                     <tr class="bg-white-100">
                         <th >Email</th>
                         <th >Nama</th>
-                        <th >Division</th>
-                        <th >Date</th>
-                        <th >Office Hours</th>
-                        <th >Description</th>
+                        <th >Certificate</th>
                         <th >Action</th>
                     </tr>
                 </thead>
                 <tbody >
-                    @forelse($presences as $row)
+                    @forelse($certificates as $row)
                         <tr>
                             <td class="border px-6 py-2">{{ $row->email }}</td>
                             <td class="border px-4 py-4">{{ $row->name }}</td>
-                            <td class="border px-4 py-2">{{ $row->division }}</td>
-                            <td class="border px-4 py-2">{{ $row->date }}</td>
-                            <td class="border px-4 py-2">{{ $row->office_hours }}</td>
-                            <td class="border px-4 py-2">{{ $row->description }}</td>
+                            <td class="border px-4 py-2"><a href="{{ Storage::url($row->certificate) }}">Sertifikat {{ $row->name }}</td>
                             <td class="border px-4 py-2">
                                 <button wire:click.prevent="edit({{ $row->id }})"  class="btn btn-sm btn-success">Edit</button>
                                 <button wire:click.prevent="delete({{ $row->id }})"  class="btn btn-sm btn-danger">Hapus</button>
@@ -57,10 +48,10 @@
                         </tr>
                     @endforelse
                 </tbody>
-            </table>         
+            </table>
         </div>
         <div class="div">
-            {{ $presences -> links() }}
+            {{ $certificates -> links() }}
         </div>
     </div>
 </div>

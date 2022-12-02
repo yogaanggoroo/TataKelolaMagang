@@ -19,7 +19,7 @@ class Reports extends Component
     public function render()
     {
         $reports = Report::orderBy('created_at', 'DESC')->paginate(3);
-        return view('livewire.reports',['reports' => $reports  ]);
+        return view('livewire.admin-reports',['reports' => $reports  ]);
     }
 
 

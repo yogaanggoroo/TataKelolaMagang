@@ -1,8 +1,5 @@
 <x-slot name="header">
-</style>
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Penilaian Peserta
-    </h2>
+    @include('template.navbar-admin')
 </x-slot>
 
 <div class="py-12">
@@ -21,35 +18,29 @@
             <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded my-3">Create</button>
 
             @if($isModal)
-                @include('livewire.evaluation.create')
+                @include('livewire.assignment.create')
             @endif
 
 
-            <table class="table-fixed w-full "  >
-                <thead >
+            <table class="min-w-full divide-y divide-gray-200 "  >
+                <thead class="bg-gray-50 dark:bg-gray-600 dark:text-gray-200">
                     <tr class="bg-white-100">
-                        <th >Email</th>
-                        <th >Nama</th>
-                        <th >Division</th>
-                        <th >Evaluation 1</th>
-                        <th >Evaluation 2</th>
-                        <th >Evaluation 3</th>
-                        <th >Evaluation 4</th>
-                        <th >Evaluation 5</th>
-                        <th >Action</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Email</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Nama</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Division</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Date</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Project Assignment</th>
+                        <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 dark:text-gray-200 uppercase tracking-wider">Action</th>
                     </tr>
                 </thead>
                 <tbody >
-                    @forelse($evaluations as $row)
+                    @forelse($assignments as $row)
                         <tr>
                             <td class="border px-6 py-2">{{ $row->email }}</td>
                             <td class="border px-4 py-4">{{ $row->name }}</td>
                             <td class="border px-4 py-2">{{ $row->division }}</td>
-                            <td class="border px-4 py-2">{{ $row->evaluation_1 }}</td>
-                            <td class="border px-4 py-2">{{ $row->evaluation_2 }}</td>
-                            <td class="border px-4 py-2">{{ $row->evaluation_3 }}</td>
-                            <td class="border px-4 py-2">{{ $row->evaluation_4 }}</td>
-                            <td class="border px-4 py-2">{{ $row->evaluation_5 }}</td>
+                            <td class="border px-4 py-2">{{ $row->date }}</td>
+                            <td class="border px-4 py-2"><a href="{{ Storage::url($row->assignment) }}">Projek {{ $row->name }}</td>
                             <td class="border px-4 py-2">
                                 <button wire:click.prevent="edit({{ $row->id }})"  class="btn btn-sm btn-success">Edit</button>
                                 <button wire:click.prevent="delete({{ $row->id }})"  class="btn btn-sm btn-danger">Hapus</button>
@@ -63,8 +54,8 @@
                 </tbody>
             </table>
         </div>
-        <div class="div">
-            {{ $evaluations -> links() }}
+        <div class="card">
+            {{ $assignments -> links() }}
         </div>
     </div>
 </div>

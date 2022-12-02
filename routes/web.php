@@ -38,25 +38,15 @@ Route::middleware([
 
     Route::get('/admin/participant',Participants::class,)->name('admin-participant');
 
-    Route::get('/admin/presence', function () {
-        return view('admin-presence');
-    })->name('admin-presence');
+    Route::get('/admin/presence', Presences::class,)->name('admin-presence');
 
-    Route::get('/admin/report', function () {
-        return view('admin-report');
-    })->name('admin-report');
+    Route::get('/admin/report', Reports::class,)->name('admin-report');
 
-    Route::get('/admin/project', function () {
-        return view('admin-project');
-    })->name('admin-project');
+    Route::get('/admin/project', Assignments::class,)->name('admin-project');
 
-    Route::get('/admin/evaluation', function () {
-        return view('admin-evaluation');
-    })->name('admin-evaluation');
+    Route::get('/admin/evaluation', Evaluations::class,)->name('admin-evaluation');
 
-    Route::get('/admin/certificate', function () {
-        return view('admin-certificate');
-    })->name('admin-certificate');
+    Route::get('/admin/certificate', Certificates::class,)->name('admin-certificate');
 });
 
 Route::middleware([

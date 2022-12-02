@@ -1,8 +1,5 @@
 <x-slot name="header">
-</style>
-    <h2 class="font-semibold text-xl text-gray-800 leading-tight">
-        Laporan Peserta
-    </h2>
+    @include('template.navbar-admin')
 </x-slot>
 
 <div class="py-12">
@@ -21,7 +18,7 @@
             <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded my-3">Create</button>
 
             @if($isModal)
-                @include('livewire.report.create')
+                @include('livewire.evaluation.create')
             @endif
 
 
@@ -31,19 +28,25 @@
                         <th >Email</th>
                         <th >Nama</th>
                         <th >Division</th>
-                        <th >Date</th>
-                        <th >LogBook</th>
+                        <th >Evaluation 1</th>
+                        <th >Evaluation 2</th>
+                        <th >Evaluation 3</th>
+                        <th >Evaluation 4</th>
+                        <th >Evaluation 5</th>
                         <th >Action</th>
                     </tr>
                 </thead>
                 <tbody >
-                    @forelse($reports as $row)
+                    @forelse($evaluations as $row)
                         <tr>
                             <td class="border px-6 py-2">{{ $row->email }}</td>
                             <td class="border px-4 py-4">{{ $row->name }}</td>
                             <td class="border px-4 py-2">{{ $row->division }}</td>
-                            <td class="border px-4 py-2">{{ $row->date }}</td>
-                            <td class="border px-4 py-2">{{ $row->logbook }}</td>
+                            <td class="border px-4 py-2">{{ $row->evaluation_1 }}</td>
+                            <td class="border px-4 py-2">{{ $row->evaluation_2 }}</td>
+                            <td class="border px-4 py-2">{{ $row->evaluation_3 }}</td>
+                            <td class="border px-4 py-2">{{ $row->evaluation_4 }}</td>
+                            <td class="border px-4 py-2">{{ $row->evaluation_5 }}</td>
                             <td class="border px-4 py-2">
                                 <button wire:click.prevent="edit({{ $row->id }})"  class="btn btn-sm btn-success">Edit</button>
                                 <button wire:click.prevent="delete({{ $row->id }})"  class="btn btn-sm btn-danger">Hapus</button>
@@ -58,7 +61,7 @@
             </table>
         </div>
         <div class="div">
-            {{ $reports -> links() }}
+            {{ $evaluations -> links() }}
         </div>
     </div>
 </div>

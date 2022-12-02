@@ -20,7 +20,7 @@ class Presences extends Component
     public function render()
     {
         $presences = Presence::orderBy('created_at', 'DESC')->paginate(3);
-        return view('livewire.presences',['presences' => $presences  ]);
+        return view('livewire.admin-presences',['presences' => $presences  ]);
     }
 
 

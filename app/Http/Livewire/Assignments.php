@@ -22,7 +22,7 @@ class Assignments extends Component
     public function render()
     {
         $assignments = Assignment::orderBy('created_at', 'DESC')->paginate(3);
-        return view('livewire.assignments',['assignments' => $assignments  ]);
+        return view('livewire.admin-assignments',['assignments' => $assignments  ]);
     }
 
 

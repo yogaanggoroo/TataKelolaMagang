@@ -3,7 +3,7 @@
 namespace App\Http\Livewire;
 
 use Livewire\Component;
-use App\Models\Report;
+use App\Models\Reportt;
 
 class Reports extends Component
 {
@@ -18,7 +18,7 @@ class Reports extends Component
 
     public function render()
     {
-        $reports = Report::orderBy('created_at', 'DESC')->paginate(3);
+        $reports = Reportt::orderBy('created_at', 'DESC')->paginate(3);
         return view('livewire.admin-reports',['reports' => $reports  ]);
     }
 
@@ -77,7 +77,7 @@ class Reports extends Component
      //QUERY UNTUK MENYIMPAN / MEMPERBAHARUI DATA MENGGUNAKAN UPDATEORCREATE
      //DIMANA ID MENJADI UNIQUE ID, JIKA IDNYA TERSEDIA, MAKA UPDATE DATANYA
      //JIKA TIDAK, MAKA TAMBAHKAN DATA BARU
-     $result = Report::updateOrCreate(['id' => $this->report_id], [
+     $result = Reportt::updateOrCreate(['id' => $this->report_id], [
          'name' => $this->name,
          'email' => $this->email,
          'division' => $this->division,
@@ -98,7 +98,7 @@ class Reports extends Component
  //FUNGSI INI UNTUK MENGAMBIL DATA DARI DATABASE BERDASARKAN ID
  public function edit($id)
  {
-     $report = Report::find($id); //BUAT QUERY UTK PENGAMBILAN DATA
+     $report = Reportt::find($id); //BUAT QUERY UTK PENGAMBILAN DATA
      //LALU ASSIGN KE DALAM MASING-MASING PROPERTI DATANYA
      $this->report_id = $id;
      $this->name = $report->name;
@@ -113,11 +113,9 @@ class Reports extends Component
  //FUNGSI INI UNTUK MENGHAPUS DATA
  public function delete($id)
  {
-     $report = Report::find($id); //BUAT QUERY UNTUK MENGAMBIL DATA BERDASARKAN ID
+     $report = Reportt::find($id); //BUAT QUERY UNTUK MENGAMBIL DATA BERDASARKAN ID
      $report->delete(); //LALU HAPUS DATA
      session()->flash('message', $report->name . ' Dihapus'); //DAN BUAT FLASH MESSAGE UNTUK NOTIFIKASI
  }
-
-
 
 }

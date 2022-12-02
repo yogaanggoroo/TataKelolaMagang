@@ -15,7 +15,7 @@
                 </div>
             @endif
 
-            <button wire:click="create()" class="bg-blue-500 hover:bg-blue-700 text-black font-bold py-2 px-4 rounded my-3">Create</button>
+            <button wire:click="create()" class="bg-primary text-white font-bold py-2 px-4 rounded my-3">Tambah Laporan</button>
 
             @if($isModal)
                 @include('livewire.report.create')

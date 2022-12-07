@@ -9,7 +9,7 @@ body {
 }
 
 .nav .nav-link:hover {
-    color: #828282 !important;
+    color: #0E4770 !important;
 }
 
 .nav .nav-app:hover {
@@ -27,6 +27,7 @@ nav.stroke ul li a,
 nav.fill ul li a {
   position: relative;
 }
+
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
   position: absolute;
@@ -40,6 +41,7 @@ nav.fill ul li a:after {
   background: black;
   height: 1px;
 }
+
 nav.stroke ul li a:hover:after {
   width: 100%;
 }
@@ -54,10 +56,12 @@ nav.fill ul li a:after {
   margin: 0;
   opacity: 0;
 }
+
 nav.fill ul li a:hover {
   color: #fff;
   z-index: 1;
 }
+
 nav.fill ul li a:hover:after {
   z-index: -10;
   -moz-animation: fill 1s forwards;

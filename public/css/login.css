@@ -23,6 +23,16 @@ ul.nav a:hover {
     font-size: 17px;
 }
 
+.forgot-pass {
+    font-style: italic;
+    color: grey;
+}
+
+.regist {
+    font-style: italic;
+    color: grey;
+}
+
 /*--------------------------------------------------------------
 # FOOTER
 --------------------------------------------------------------*/

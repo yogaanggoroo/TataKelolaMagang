@@ -52,41 +52,40 @@
                                 <div class="form-outline mb-4">
                                     <label for="email" class="form-label">{{ __('Email') }} </label> <br>
                                     <input id="email" class="form-control" type="email" name="email"
-                                        :value="old('email')" required autofocus />
+                                        :value="old('email')" placeholder="Masukkan email" required autofocus />
                                 </div>
 
                                 <div class="form-outline mb-4">
                                     <label for="password" class="form-label">{{ __('Password') }} </label> <br>
                                     <input id="password" class="form-control" type="password" name="password" required
-                                        autocomplete="current-password" />
+                                        autocomplete="current-password" placeholder="Masukkan password" />
                                 </div>
 
-                                <div class="block mt-1">
+                                <!-- <div class="block mt-1">
                                     <label for="remember_me" class="flex items-center">
                                         <input type="checkbox" id="remember_me" name="remember">
                                         <span class="ml-2 text-sm text-gray-600">{{ __('Remember me') }}</span>
                                     </label>
-                                </div>
+                                </div> -->
 
                                 <div class="mt-2">
                                     @if (Route::has('password.request'))
-                                    <a class="underline text-sm text-gray-600 hover:text-gray-900"
+                                    <a class="forgot-pass"
                                         href="{{ route('password.request') }}">
                                         {{ __('Forgot your password?') }}
                                     </a>
                                     @endif
                                 </div>
 
-                                <div class="d-grid pt-5">
-                                    <button type="submit" class="btn btn-block mb-3"
-                                        style="background-color: #0E4770; color: white;">
+                                <div class="d-grid pt-4">
+                                    <button type="submit" class="btn btn-block mb-3" style="background-color: #0E4770; color: white;">
                                         {{ __('Login') }}
                                     </button>
                                 </div>
 
                                 <!-- Register buttons -->
                                 <div class="txt-register text-center pt-4">
-                                    <p>Belum punya akun? <a href="/register">Register</a></p>
+                                    <p>Belum punya akun? <a href="/register" class="regist">Register</a></p>
                                 </div>
                             </form>
 

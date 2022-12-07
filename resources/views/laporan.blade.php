@@ -14,6 +14,12 @@
                         </div>
                     </div>
 
+
+                    <div class="col-md-12 pt-2">
+                        <button class="btn float-start" id="submit" type=''
+                            style="background-color: #F66951; color: white;">Download Laporan</button>
+                    </div>
+
                     <div class="container py-5 h-100">
                         <form action="add" method="POST">
                             @csrf
@@ -21,13 +27,13 @@
                             <div class="row">
 
                                 <div class="form-outline w-100">
-                                    <label class="" for="namaLengkap">Nama Lengkap</label>
+                                    <label class="" for="namaLengkap">Nama Lengkap<span class="text-danger">*</label>
                                     <input type="text" id="namaLengkap" class="form-control" name="name"
                                         placeholder="Masukkan nama lengkap" required />
                                 </div>
 
                                 <div class="form-outline pt-3">
-                                        <label for="division" class="">Divisi</label>
+                                        <label for="division" class="">Divisi<span class="text-danger">*</label>
                                             <select name="division" class="form-control" id="" required>
                                                 <option selected disabled>Pilih Divisi</option>
                                                     <option value="keuangan">Keuangan</option>
@@ -46,7 +52,7 @@
                             <div class="row">
 
                                 <div class="form-outline w-100 pt-3">
-                                    <label class="" for="tanggalLaporan">Tanggal</label>
+                                    <label class="" for="tanggalLaporan">Tanggal<span class="text-danger">*</label>
                                     <input type="date" id="tanggalLaporan" name="date" class="form-control" required />
                                 </div>
 
@@ -55,7 +61,7 @@
                             <div class="row">
 
                                 <div class="form-outline w-100 pt-3">
-                                    <label for="laporanPeserta" class="">Laporan</label>
+                                    <label for="laporanPeserta" class="">Laporan<span class="text-danger">*</label>
                                     <textarea class="form-control" id="laporanPeserta" rows="3" name="reports"
                                         placeholder="Isi laporan" required></textarea>
                                 </div>
@@ -68,6 +74,10 @@
                                     style="background-color: #0E4770; color: white;">Save</button>
                             </div>
 
+                            <div class="d-grid">
+                                <button type="" class="btn btn-block mb-3"
+                                    style="background-color: #F66951; color: white;">Download Laporan</button>
+                            </div>
                         </form>
                     </div>
                 </div>

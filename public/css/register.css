@@ -5,6 +5,15 @@
     font-family: "Roboto", "Montserrat", sans-serif;
 }
 
-body {
-    background-color: #0e4770;
+.bg-hero {
+    background-image:  url("/img/bg-regist.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.registered {
+    font-style: italic;
+    color: grey;
 }

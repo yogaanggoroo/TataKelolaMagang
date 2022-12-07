@@ -14,9 +14,9 @@
     <link rel="stylesheet" href="/css/register.css">
 </head>
 
-<body>
-    <section class="vh-100 gradient-custom">
-        <div class="container py-5 h-100">
+<body class="bg-hero">
+    <section class="">
+        <div class="container py-5 h-100 bg-regist">
             <div data-aos="zoom-in" class="row justify-content-center align-items-center h-100">
                 <div class="col-12 col-lg-9 col-xl-7">
                     <div class="card shadow-2-strong card-registration my-lg-5" style="border-radius: 15px;">
@@ -30,7 +30,7 @@
                                         <div class="form-outline w-100">
                                             <label for="name" class="form-label">{{ __('Name') }}</label> <br>
                                             <input id="name" class="form-control form-control-lg" type="text"
-                                                name="name" :value="old('name')" required autofocus
+                                                name="name" :value="old('name')" placeholder="Masukkan nama" required autofocus
                                                 autocomplete="name" />
                                         </div>
                                     </div>
@@ -39,13 +39,13 @@
 
                                         <label for="email" class="form-label">{{ __('Email') }}</label> <br>
                                         <input id="email" class="form-control form-control-lg" type="email" name="email"
-                                            :value="old('email')" required />
+                                            :value="old('email')" placeholder="Masukkan email" required />
                                     </div>
 
                                     <div class="form-outline pt-3">
                                         <label for="password" class="form-label">{{ __('Password') }}</label>
                                         <input id="password" class="form-control form-control-lg" type="password"
-                                            name="password" required autocomplete="new-password" />
+                                            name="password" placeholder="Masukkan password" required autocomplete="new-password" />
                                     </div>
 
                                     <div class="form-outline pt-3">
@@ -53,7 +53,7 @@
                                             value="{{ __('Confirm Password') }}">{{ __('Confirm Password') }}</label>
                                         <br>
                                         <input id="password_confirmation" class="form-control form-control-lg"
-                                            type="password" name="password_confirmation" required
+                                            type="password" name="password_confirmation" placeholder="Masukkan password" required
                                             autocomplete="new-password" />
                                     </div>
 
@@ -81,14 +81,13 @@
                                             </div>
                                         </label>
                                     </div>
-                                    @endif
+                                @endif
 
                                 <div class="flex items-center justify-content-end mt-4">
-                                    <a href="{{ route('login') }}" class="">{{ __('Already registered?') }}</a>
+                                    <a href="{{ route('login') }}" class="registered">{{ __('Already registered?') }}</a>
 
                                     <div class="d-grid mt-3">
-                                        <button href="{{ route('login') }}" type="submit" class="btn btn-block mb-3" onclick="contoh()"
-                                            style="background-color: #0E4770; color: white;">{{ __('Register') }}</button>
+                                        <button href="{{ route('login') }}" type="submit" class="btn btn-block mb-3" style="background-color: #0e4770; color: white;" onclick="contoh()">{{ __('Register') }}</button>
                                     </div>
                                 </div>
 

@@ -18,16 +18,16 @@
                     <h3 class="txt-magang">APA SAJA MANFAAT PROGRAM MAGANG?</h3>
                     <div id="manfaat-magang" class="d-flex align-items-start mb-3 p-1" style="font-weight: 300;">
                         <div class="col">
-                            <img src="/img/list-1.svg" alt="lis-1" height="150" width="150" class="mx-auto d-block">
+                            <img src="/img/list-1.svg" alt="list-1" height="150" width="150" class="mx-auto d-block">
                             Mendapatkan pemahaman tentang hubungan antara teori di kampus dan penerapannya di lapangan.</div>
                         <div class="col">
-                            <img src="/img/list-2.svg" alt="lis-2" height="150" width="150" class="mx-auto d-block">
+                            <img src="/img/list-2.svg" alt="list-2" height="150" width="150" class="mx-auto d-block">
                             Memperoleh gambaran yang lebih komprehensif mengenai dunia kerja.</div>
                         <div class="col">
-                            <img src="/img/list-3.svg" alt="lis-3" height="150" width="150" class="mx-auto d-block">
+                            <img src="/img/list-3.svg" alt="list-3" height="150" width="150" class="mx-auto d-block">
                             Meningkatkan wawasan dan relasi dalam lingkungan profesional.</div>
                         <div class="col">
-                            <img src="/img/list-4.svg" alt="lis-4" height="150" width="150" class="mx-auto d-block">
+                            <img src="/img/list-4.svg" alt="list-4" height="150" width="150" class="mx-auto d-block">
                             Sarana memperoleh bahan tugas akhir kuliah.</div>
                       </div>
 

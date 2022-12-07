@@ -22,13 +22,13 @@
                             <div class="row">
 
                                 <div class="form-outline w-100">
-                                    <label class="" for="namaLengkap">Nama Lengkap</label>
+                                    <label class="" for="namaLengkap">Nama Lengkap<span class="text-danger">*</label>
                                     <input type="text" id="namaLengkap" class="form-control" name="name"
                                         placeholder="Masukkan nama lengkap" required />
                                 </div>
 
                                 <div class="form-outline pt-3">
-                                    <label for="division" class="">Divisi</label>
+                                    <label for="division" class="">Divisi<span class="text-danger">*</label>
                                         <select name="division" class="form-control" id="">
                                             <option selected disabled>Pilih Divisi</option>
                                                 <option value="keuangan">Keuangan</option>
@@ -47,7 +47,7 @@
                             <div class="row">
 
                                 <div class="form-outline w-100 pt-3">
-                                    <label class="" for="tanggalTugas">Tanggal</label>
+                                    <label class="" for="tanggalTugas">Tanggal<span class="text-danger">*</label>
                                     <input type="date" id="tanggalTugas" class="form-control" name="date" required />
                                 </div>
 
@@ -56,7 +56,7 @@
                             <div class="row">
 
                                 <div class="form-outline w-100 pt-3">
-                                    <label class="" for="uploadTugas">Upload Tugas</label>
+                                    <label class="" for="uploadTugas">Upload Tugas<span class="text-danger">*</label>
                                     <input type="file" class="form-control" id="uploadTugas" name="upload" required />
                                 </div>
 

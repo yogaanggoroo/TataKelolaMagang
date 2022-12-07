@@ -22,7 +22,8 @@
 
                         <!-- Cetak Sertifikat -->
                         <div class="pt-2">
-                            <a href="https://forms.gle/jpXsoqnb66SbvmGW8" class="btn btn-block mb-3"
+                            <!-- https://forms.gle/jpXsoqnb66SbvmGW8 -->
+                            <a href="" class="btn btn-block mb-3"
                             style="background-color: #0E4770; color: white;" >Cetak Sertifikat</a>
                         </div>
                     </div>

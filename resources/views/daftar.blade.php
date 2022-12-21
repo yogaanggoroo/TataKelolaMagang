@@ -4,13 +4,12 @@
     </x-slot>
 
     <!-- ISI -->
-
     <section class="breadcrumbs">
         <div class="container">
 
             <div class="d-flex justify-start align-items-center">
                 <ol>
-                  <li><a href="{{ route('magang') }}">Magang</a></li>
+                  <li><a href="{{ route('program') }}">Program</a></li>
                   <li>Daftar</li>
                 </ol>
             </div>
@@ -100,9 +99,31 @@
                                 </div>
                                 <div class="col-md-12">
                                     <button class="btn float-end" id="submit" type='submit'
-                                        style="background-color: #0E4770; color: white;">Submit</button>
+                                        style="background-color: #0E4770; color: white;" onclick="daftar()">Submit</button>
                                 </div>
                             </div>
+
+                            <script type="text/javascript">
+
+                                function daftar() {
+
+                                   swal({
+
+                                        title: "Berhasil!",
+
+                                        text: "Anda berhasil membuat Akun",
+
+                                        icon: "success",
+
+                                        button: true,
+
+                                        timer: 5000
+
+                                    });
+
+                                }
+
+                            </script>
                         </form>
                     </div>
                 </div>

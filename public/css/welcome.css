@@ -5,7 +5,7 @@
 }
 
 .container .navbar-nav .nav-link:hover {
-    color: #969595 !important;
+    color: #12a2bd !important;
 }
 
 .btn-user {
@@ -22,9 +22,10 @@ ul.nav a:hover {
     color: #0E4770 !important;
 }
 
-.hero-image {
+.hero-img {
     background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/welcome-image.jpg");
-    height: 600px;
+    width: 100%;
+    height: 100vh;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -52,7 +53,7 @@ ul.nav a:hover {
     font-size: 19px;
     color: #fff;
     background: #F66951;
-    padding: 8px 25px;
+    padding: 8px 27px;
     border-radius: 50px;
     transition: 0.3s;
     text-decoration: none;

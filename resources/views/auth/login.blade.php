@@ -15,8 +15,8 @@
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg navbar-dark " style="background-color: #0E4770">
+    <header class="sticky-top">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-top" style="background-color: #0E4770">
             <div class="container">
                 <a class="navbar-brand" href="#">
                     <img src="/img/logo_pln1.png" alt="Logo PLN" width="100">
@@ -97,11 +97,9 @@
     </section>
 
     <footer>
-
         <div class="copyright p-3 text-white">
             PT PLN (Persero) Kantor Pusat Jalan Trunojoyo Blok M-I No.135 Kebayoran Baru, Jakarta 12160, Indonesia
         </div>
-
     </footer>
 
     <!-- JavaScript Bundle with Popper -->

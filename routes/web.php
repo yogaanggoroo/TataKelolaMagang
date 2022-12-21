@@ -5,6 +5,8 @@ use App\Http\Controllers\ReportController;
 use App\Http\Controllers\TaskController;
 use App\Http\Controllers\AppliesController;
 use App\Http\Controllers\PresensiController;
+use App\Http\Controllers\CertificateController;
+
 use App\Http\Livewire\Participants;
 use App\Http\Livewire\Presences;
 use App\Http\Livewire\Reports;
@@ -57,16 +59,24 @@ Route::middleware([
     Route::get('/dashboard', function () {
         return view('dashboard');
     })->name('dashboard');
-    Route::get('/magang', function () {
-        return view('magang');
-    })->name('magang');
+
+    Route::get('/program', function () {
+        return view('program');
+    })->name('program');
+
+    Route::get('/program#proses-seleksi-magang', function () {
+        return view('program#proses-seleksi-magang');
+    })->name('program#proses-seleksi-magang');
+
     Route::get('/daftar', function () {
         return view('daftar');
     })->name('daftar');
     Route::POST('addss', [AppliesController::class, 'AddApplies']);
+
     Route::get('/presensi', function () {
         return view('presensi');
     })->name('presensi');
+
     Route::get('/masuk', function () {
         return view('masuk');
     })->name('masuk');
@@ -76,21 +86,29 @@ Route::middleware([
     Route::get('/keluar', [PresensiController::class,'keluar'])->name('keluar');
     Route::get('halaman-history',[PresensiController::class,'halamanhistory'])->name('halaman-history');
     Route::get('history/{tglawal}/{tglakhir}',[PresensiController::class,'tampildatakeseluruhan'])->name('history-keseluruhan');
+
     Route::get('/keluar', function () {
         return view('keluar');
     })->name('keluar');
+
     Route::get('/history', function () {
         return view('history');
     })->name('history');
+
     Route::get('/laporan', function () {
         return view('laporan');
     })->name('laporan');
     Route::POST('add', [ReportController::class, 'AddReport']);
+    Route::get('/export_pdf', [ReportController::class, 'export_pdf']);
+
     Route::get('/tugas', function () {
         return view('tugas');
     })->name('tugas');
     Route::POST('adds', [TaskController::class, 'AddTask']);
+
     Route::get('/sertifikat', function () {
         return view('sertifikat');
     })->name('sertifikat');
+    Route::POST('addss', [CertificateController::class, 'AddCertif']);
+    Route::get('/download_sertifikat', [CertificateController::class, 'download_sertifikat']);
 });

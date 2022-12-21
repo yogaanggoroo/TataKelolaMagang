@@ -6,7 +6,7 @@
     </-- ISI -->
 
     <div class="pt-sm-4">
-        <div class="container-sm card">
+        <div data-aos="zoom-in" class="container-sm card">
             <div class="container hero-text pt-lg-3">
                 <img src="/img/welcome.svg" class="float-end" alt="welcome">
                 <h1>Selamat Datang Admin!</h1>

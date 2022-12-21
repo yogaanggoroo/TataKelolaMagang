@@ -3,7 +3,7 @@
 </x-slot>
 
 <div class="py-10">
-    <div class="overflow-x-auto sm:-mx-6 lg:-mx-8" >
+    <div data-aos="zoom-in" class="overflow-x-auto sm:-mx-6 lg:-mx-8" >
     <div class="py-2 align-middle inline-block min-w-full sm:px-6 lg:px-8">
         <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg px-4 py-4" style="overflow-x-auto">
             @if (session()->has('message'))

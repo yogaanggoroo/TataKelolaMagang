@@ -28,7 +28,7 @@
                                 <div class="row">
                                     <div class="col-md-6 mb-4 w-100">
                                         <div class="form-outline w-100">
-                                            <label for="name" class="form-label">{{ __('Name') }}</label> <br>
+                                            <label for="name" class="form-label">{{ __('Nama Lengkap') }}</label> <br>
                                             <input id="name" class="form-control form-control-lg" type="text"
                                                 name="name" :value="old('name')" placeholder="Masukkan nama" required autofocus
                                                 autocomplete="name" />
@@ -56,7 +56,6 @@
                                             type="password" name="password_confirmation" placeholder="Masukkan password" required
                                             autocomplete="new-password" />
                                     </div>
-
                                 </div>
 
                                 @if (Laravel\Jetstream\Jetstream::hasTermsAndPrivacyPolicyFeature())
@@ -87,7 +86,8 @@
                                     <a href="{{ route('login') }}" class="registered">{{ __('Already registered?') }}</a>
 
                                     <div class="d-grid mt-3">
-                                        <button href="{{ route('login') }}" type="submit" class="btn btn-block mb-3" style="background-color: #0e4770; color: white;" onclick="contoh()">{{ __('Register') }}</button>
+                                        <button href="{{ route('login') }}" type="submit" class="btn btn-block mb-3"
+                                        style="background-color: #0E4770; color: white;" onclick="contoh()">{{ __('Register') }}</button>
                                     </div>
                                 </div>
 

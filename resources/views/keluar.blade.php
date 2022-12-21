@@ -29,14 +29,12 @@
     </x-slot>
 
     <!-- ISI -->
-
     <section class="breadcrumbs">
         <div class="container">
-
             <div class="d-flex justify-start align-items-center">
                 <ol>
-                  <li><a href="{{ route('presensi') }}">Presensi</a></li>
-                  <li>Check-Out</li>
+                    <li><a href="{{ route('presensi') }}">Presensi</a></li>
+                    <li>Check-Out</li>
                 </ol>
             </div>
         </div>
@@ -70,14 +68,11 @@
                                 </div>
                             </center>
                         </form>
-
                     </div>
                 </div>
             </div>
         </div>
-        <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
 
     <!-- Footer -->
     @include('template.footer')

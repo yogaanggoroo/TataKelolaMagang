@@ -65,7 +65,6 @@
                                             </tr>
                                             @endforeach
                                         </table>
-
                                         <div class="">
                                             {{ $presensi->links() }}
                                         </div>
@@ -78,7 +77,6 @@
             </div>
         </div>
     </div>
-    <!-- /.content -->
 
     <!-- Footer -->
     @include('template.footer')

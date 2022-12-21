@@ -15,17 +15,58 @@
                     </div>
 
                     <div class="container py-4 h-100">
+                        <form action="addss" method="POST">
+                            @csrf
 
-                        <!-- <p>Selamat Anda Telah Lulus Program Magang Di PT PLN (Persero)</p> -->
+                            <div class="row">
+                                <div class="form-outline w-100">
+                                    <label class="" for="ttl">Tempat, Tanggal Lahir<span class="text-danger">*</label>
+                                    <input type="text" id="ttl" class="form-control" name="ttl"
+                                        placeholder="Masukkan tempat, tanggal lahir" required />
+                                </div>
 
-                        <p>Silahkan Isi & Cetak Sertifikat Dibawah Ini</p>
+                                <div class="form-outline pt-3">
+                                    <label for="division" class="">Divisi<span class="text-danger">*</label>
+                                    <select name="division" class="form-control" id="">
+                                        <option selected disabled>Pilih Divisi</option>
+                                        <option value="Keuangan">Keuangan</option>
+                                        <option value="Anggaran">Anggaran</option>
+                                        <option value="Akuntansi">Akuntansi</option>
+                                        <option value="HTD">HTD</option>
+                                        <option value="Sistem & Teknologi Informasi">Sistem dan Teknologi Informasi
+                                        </option>
+                                        <option value="Risk Management">Risk Management</option>
+                                        <option value="Pengelolaan Aset">Pengelolaan Aset</option>
+                                        <option value="Hukum Korporat">Hukum Korporat</option>
+                                    </select>
+                                </div>
+                            </div>
 
-                        <!-- Cetak Sertifikat -->
-                        <div class="pt-2">
-                            <!-- https://forms.gle/jpXsoqnb66SbvmGW8 -->
-                            <a href="" class="btn btn-block mb-3"
-                            style="background-color: #0E4770; color: white;" >Cetak Sertifikat</a>
-                        </div>
+                            <div class="row">
+                                <div class="form-outline w-100 pt-3">
+                                    <label class="" for="tgl_mulai">Mulai Magang<span class="text-danger">*</label>
+                                    <input type="date" id="tgl_mulai" class="form-control" name="tgl_mulai" required />
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="form-outline w-100 pt-3">
+                                    <label class="" for="tgl_akhir">Selesai Magang<span class="text-danger">*</label>
+                                    <input type="date" class="form-control" name="tgl_akhir" required />
+                                </div>
+                            </div>
+
+                            <div class="d-grid mt-4 pt-4">
+                                <!-- Submit button -->
+                                <button type="submit" class="btn btn-save btn-block mb-3"
+                                    style="background-color:#0E4770; color: white;">Save</button>
+                            </div>
+
+                            <div class="d-grid">
+                                <a href="{{ ('download_sertifikat') }}" class="btn btn-block mb-3 btn-laporan">Download
+                                    Sertifikat</a>
+                            </div>
+                        </form>
                     </div>
                 </div>
             </div>

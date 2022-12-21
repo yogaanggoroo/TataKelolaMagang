@@ -9,10 +9,10 @@ class Certificate extends Model
 {
     use HasFactory;
 
-    protected $fillable =   [
-        'email',
-        'name',
-        'certificate',
+    protected $table = "certificates";
+    protected $primaryKey = "id";
+    protected $fillable = [
+        'id','user_id','ttl','division','tgl_mulai','tgl_akhir'
     ];
 
     public function certificate()
@@ -20,4 +20,3 @@ class Certificate extends Model
         return $this->hasMany(Certificate::class);
     }
 }
-

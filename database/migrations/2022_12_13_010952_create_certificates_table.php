@@ -13,12 +13,13 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reportts', function (Blueprint $table) {
+        Schema::create('certificates', function (Blueprint $table) {
             $table->id();
-            $table->string('email')->unique();
-            $table->string('division', 15);
-            $table->date('date');
-            $table->longText('logbook');
+            $table->bigInteger('user_id');
+            $table->string('ttl',);
+            $table->char('division', 100);
+            $table->date("tgl_mulai");
+            $table->date("tgl_akhir");
             $table->timestamps();
         });
     }
@@ -30,6 +31,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reports');
+        Schema::dropIfExists('certificates');
     }
 };

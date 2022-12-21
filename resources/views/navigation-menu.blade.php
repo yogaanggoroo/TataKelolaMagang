@@ -6,8 +6,7 @@
                 <!-- Logo -->
                 <div class="shrink-0 flex items-center">
                     <a href="">
-                        <img src="/img/logo_pln1.png" alt="logopln" class="block h-9 w-auto">
-
+                        <img src="/img/bg-ptpln.png" alt="logopln" class="block h-16 w-auto">
                     </a>
                 </div>
 
@@ -46,8 +45,8 @@
                                 :active="request()->routeIs('dashboard')" style="color: white;">{{ __('Beranda') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
-                                style="color: white;">{{ __('Magang') }}</a>
+                            <a class="nav-link" href="{{ route('program') }}" :active="request()->routeIs('program')"
+                                style="color: white;">{{ __('Program') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
@@ -81,8 +80,8 @@
                                 :active="request()->routeIs('dashboard')" style="color: white;">{{ __('Beranda') }}</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="{{ route('magang') }}" :active="request()->routeIs('magang')"
-                                style="color: white;">{{ __('Magang') }}</a>
+                            <a class="nav-link" href="{{ route('program') }}" :active="request()->routeIs('program')"
+                                style="color: white;">{{ __('Program') }}</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="{{ route('presensi') }}" :active="request()->routeIs('presensi')"
@@ -329,12 +328,12 @@
                     {{ __('Profile') }}
                 </x-jet-responsive-nav-link>
 
-                <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
+                <!-- <x-jet-responsive-nav-link href="{{ route('dashboard') }}" :active="request()->routeIs('dashboard')">
                     {{ __('Beranda') }}
                 </x-jet-responsive-nav-link>
 
-                <x-jet-responsive-nav-link href="{{ route('magang') }}" :active="request()->routeIs('magang')">
-                    {{ __('Magang') }}
+                <x-jet-responsive-nav-link href="{{ route('program') }}" :active="request()->routeIs('program')">
+                    {{ __('program') }}
                 </x-jet-responsive-nav-link>
 
                 <x-jet-responsive-nav-link href="{{ route('presensi') }}" :active="request()->routeIs('presensi')">
@@ -351,7 +350,7 @@
 
                 <x-jet-responsive-nav-link href="{{ route('sertifikat') }}" :active="request()->routeIs('sertifikat')">
                     {{ __('Sertifikat') }}
-                </x-jet-responsive-nav-link>
+                </x-jet-responsive-nav-link> -->
 
                 @if (Laravel\Jetstream\Jetstream::hasApiFeatures())
                 <x-jet-responsive-nav-link href="{{ route('api-tokens.index') }}"

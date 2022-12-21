@@ -13,13 +13,8 @@ return new class extends Migration
      */
     public function up()
     {
-        Schema::create('reportts', function (Blueprint $table) {
-            $table->id();
-            $table->string('email')->unique();
-            $table->string('division', 15);
-            $table->date('date');
-            $table->longText('logbook');
-            $table->timestamps();
+        Schema::table('reports', function (Blueprint $table) {
+            $table->bigInteger('user_id')->after('id');
         });
     }
 
@@ -30,6 +25,8 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('reports');
+        Schema::table('reports', function (Blueprint $table) {
+            $table->dropColumn('user_id');
+        });
     }
 };

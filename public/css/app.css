@@ -1,5 +1,18 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;900&family=Roboto:wght@300;500;900&display=swap");
 
+
+/* Colors */
+:root {
+    --color-default: #0a0d13;
+    --color-primary: #0d42ff;
+    --color-secondary: #0e1d34;
+}
+
+/* Smooth scroll behavior */
+:root {
+    scroll-behavior: smooth;
+}
+
 * {
     font-family: "Roboto", "Montserrat", sans-serif;
 }
@@ -9,11 +22,11 @@ body {
 }
 
 .nav .nav-link:hover {
-    color: #0E4770 !important;
+    color: #12a2bd !important;
 }
 
 .nav .nav-app:hover {
-    color: #c0c0c0 !important;
+    color: #12a2bd !important;
 }
 
 .card-body .header-login {
@@ -25,53 +38,53 @@ body {
 --------------------------------------------------------------*/
 nav.stroke ul li a,
 nav.fill ul li a {
-  position: relative;
+    position: relative;
 }
 
 nav.stroke ul li a:after,
 nav.fill ul li a:after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: '.';
-  color: transparent;
-  background: black;
-  height: 1px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: black;
+    height: 1px;
 }
 
 nav.stroke ul li a:hover:after {
-  width: 100%;
+    width: 100%;
 }
 
 nav.fill ul li a {
-  transition: all 2s;
+    transition: all 2s;
 }
 
 nav.fill ul li a:after {
-  text-align: left;
-  content: '.';
-  margin: 0;
-  opacity: 0;
+    text-align: left;
+    content: '.';
+    margin: 0;
+    opacity: 0;
 }
 
 nav.fill ul li a:hover {
-  color: #fff;
-  z-index: 1;
+    color: #fff;
+    z-index: 1;
 }
 
 nav.fill ul li a:hover:after {
-  z-index: -10;
-  -moz-animation: fill 1s forwards;
-  -webkit-animation: fill 1s forwards;
-  animation: fill 1s forwards;
-  opacity: 1;
+    z-index: -10;
+    -moz-animation: fill 1s forwards;
+    -webkit-animation: fill 1s forwards;
+    animation: fill 1s forwards;
+    opacity: 1;
 }
 
 .hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("/img/IndonesiaPLN.jpg");
+    background-image: linear-gradient(rgba(0, 0, 0, 0.162), rgba(0, 0, 0, 0.083)), url("/img/bg-pln.jpg");
     height: 710px;
     background-position: center;
     background-repeat: no-repeat;
@@ -82,13 +95,13 @@ nav.fill ul li a:hover:after {
 .hero-text .txt-header {
     font-weight: 600;
     color: white;
-    font-size: 46px;
+    font-size: 40px;
 }
 
 .hero-text .txt-hero {
-    font-weight: 400;
+    font-weight: 300;
     color: white;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 .hero-text button:hover {
@@ -97,11 +110,11 @@ nav.fill ul li a:hover:after {
 }
 
 .btn-registration {
-    font-size: 19px;
+    font-size: 18px;
     color: #fff;
     background: #F66951;
-    padding: 8px 20px;
-    border-radius: 30px;
+    padding: 9px 25px;
+    border-radius: 20px;
     transition: 0.3s;
     text-decoration: none;
 }
@@ -109,6 +122,21 @@ nav.fill ul li a:hover:after {
 .btn-registration:hover {
     background-color: #fa4626;
     color: white;
+}
+
+.btn-persyaratan {
+    font-size: 18px;
+    color: black;
+    background: #ffffff;
+    padding: 9px 25px;
+    border-radius: 20px;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+.btn-persyaratan:hover {
+    background-color: #ffffff;
+    color: black;
 }
 
 h1 {
@@ -150,6 +178,11 @@ h1 {
     color: white !important;
 }
 
+.btn-save:hover {
+    background-color: #0c3b5d !important;
+    color: white !important;
+}
+
 .txt-magang {
     font-size: 30px;
 }
@@ -185,11 +218,318 @@ h1 {
 }
 
 .container .btn-history {
-    padding: 6px ;
+    padding: 6px;
 }
 
-.container .btn-history:hover {
-    color: white;
+.container .btn-laporan {
+    color: #fff;
+    background: #F66951;
+}
+
+.container .btn-laporan:hover {
+    background-color: #fa4626 !important;
+    color: white !important;
+}
+
+@media all and (max-width: 1399px){
+    .container .btn-checkin {
+        display: block;
+        margin: 0.4em auto;
+        padding: 5px;
+    }
+    .container .btn-checkout {
+        display: block;
+        margin: 0.4em auto;
+        padding: 5px;
+    }
+}
+
+/*--------------------------------------------------------------
+# Call To Action Section
+--------------------------------------------------------------*/
+.call-to-action {
+    background: linear-gradient(rgba(14, 29, 52, 0.6), rgba(14, 29, 52, 0.8)), url("/img/bg-selection.jpg") center center;
+    background-size: cover;
+    padding: 50px 0;
+}
+
+@media (min-width: 1365px) {
+    .call-to-action {
+        background-attachment: fixed;
+    }
+}
+
+.call-to-action h3 {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.call-to-action p {
+    color: #fff;
+}
+
+.call-to-action .cta-btn {
+    font-family: var(--font-primary);
+    font-weight: 500;
+    font-size: 16px;
+    letter-spacing: 1px;
+    display: inline-block;
+    padding: 12px 40px;
+    border-radius: 5px;
+    transition: 0.5s;
+    margin: 10px;
+    border: 2px solid #fff;
+    color: #fff;
+}
+
+.call-to-action .cta-btn:hover {
+    background: var(--color-primary);
+    border: 2px solid var(--color-primary);
+}
+
+
+/*--------------------------------------------------------------
+# Sections General
+--------------------------------------------------------------*/
+section {
+    padding: 60px 0;
+    overflow: hidden;
+}
+
+.section-bg {
+    background-color: #f6f9fe;
+}
+
+.section-title {
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.section-title h2 {
+    font-size: 13px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    padding: 8px 20px;
+    margin: 0;
+    background: #e7f1fd;
+    color: #106eea;
+    display: inline-block;
+    text-transform: uppercase;
+    border-radius: 50px;
+}
+
+.section-title h3 {
+    margin: 15px 0 0 0;
+    font-size: 32px;
+    font-weight: 700;
+}
+
+.section-title h3 span {
+    color: #106eea;
+}
+
+.section-title p {
+    margin: 15px auto 0 auto;
+    font-weight: 600;
+}
+
+@media (min-width: 1024px) {
+    .section-title p {
+        width: 50%;
+    }
+
+
+    /*--------------------------------------------------------------
+# Featured Services
+--------------------------------------------------------------*/
+    .featured-services .icon-box {
+        padding: 30px;
+        position: relative;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0 0 29px 0 rgba(68, 88, 144, 0.12);
+        transition: all 0.3s ease-in-out;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .featured-services .icon-box::before {
+        content: "";
+        position: absolute;
+        background: #cbe0fb;
+        right: 0;
+        left: 0;
+        bottom: 0;
+        top: 100%;
+        transition: all 0.3s;
+        z-index: -1;
+    }
+
+    .featured-services .icon-box:hover::before {
+        background: #106eea;
+        top: 0;
+        border-radius: 0px;
+    }
+
+    .featured-services .icon {
+        margin-bottom: 15px;
+    }
+
+    .featured-services .icon i {
+        font-size: 48px;
+        line-height: 1;
+        color: #106eea;
+        transition: all 0.3s ease-in-out;
+    }
+
+    .featured-services .title {
+        font-weight: 700;
+        margin-bottom: 15px;
+        font-size: 18px;
+    }
+
+    .featured-services .title a {
+        color: #111;
+    }
+
+    .featured-services .description {
+        font-size: 15px;
+        line-height: 28px;
+        margin-bottom: 0;
+    }
+
+    .featured-services .icon-box:hover .title a,
+    .featured-services .icon-box:hover .description {
+        color: #fff;
+    }
+
+    .featured-services .icon-box:hover .icon i {
+        color: #fff;
+    }
+
+    /*--------------------------------------------------------------
+# About
+--------------------------------------------------------------*/
+    .about .content h3 {
+        font-weight: 600;
+        font-size: 26px;
+    }
+
+    .about .content ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .about .content ul li {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 35px;
+    }
+
+    .about .content ul li:first-child {
+        margin-top: 35px;
+    }
+
+    .about .content ul i {
+        background: #fff;
+        box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
+        font-size: 24px;
+        padding: 20px;
+        margin-right: 15px;
+        color: #106eea;
+        border-radius: 50px;
+    }
+
+    .about .content ul h5 {
+        font-size: 18px;
+        color: #555555;
+    }
+
+    .about .content ul p {
+        font-size: 15px;
+    }
+
+    .about .content p:last-child {
+        margin-bottom: 0;
+    }
+
+    /*--------------------------------------------------------------
+# BREADCRUMBS
+--------------------------------------------------------------*/
+    .breadcrumbs {
+        padding: 15px 0;
+        background: #f6f6f7;
+        margin-top: 20px;
+    }
+
+    .breadcrumbs h2 {
+        font-size: 24px;
+        line-height: 1;
+        font-weight: 400;
+    }
+
+    .breadcrumbs ol {
+        display: flex;
+        flex-wrap: wrap;
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        font-size: 14px;
+    }
+
+    .breadcrumbs ol li+li {
+        padding-left: 10px;
+    }
+
+    .breadcrumbs ol li+li::before {
+        display: inline-block;
+        padding-right: 10px;
+        color: #4f4c55;
+        content: "/";
+    }
+
+    @media (max-width: 768px) {
+        .breadcrumbs .d-flex {
+            display: block !important;
+        }
+
+        .breadcrumbs ol {
+            display: block;
+        }
+
+        .breadcrumbs ol li {
+            display: inline-block;
+        }
+    }
+
+    .breadcrumbs .container ol li a {
+        color: #0E4770;
+
+    }
+
+    /*--------------------------------------------------------------
+#
+--------------------------------------------------------------*/
+
+    .scrollmenu {
+        background-color: #333;
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .scrollmenu a {
+        display: inline-block;
+
+        text-align: center;
+        padding: 14px;
+        text-decoration: none;
+    }
+
+    .scrollmenu a:hover {
+        background-color: #777;
+    }
+
 }
 
 /*--------------------------------------------------------------
@@ -207,73 +547,3 @@ footer {
 .copyright a {
     font-weight: 500;
 }
-
-/*--------------------------------------------------------------
-# BREADCRUMBS
---------------------------------------------------------------*/
-.breadcrumbs {
-    padding: 15px 0;
-    background: #f6f6f7;
-    margin-top: 20px;
-  }
-  .breadcrumbs h2 {
-    font-size: 24px;
-    line-height: 1;
-    font-weight: 400;
-  }
-  .breadcrumbs ol {
-    display: flex;
-    flex-wrap: wrap;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 14px;
-  }
-  .breadcrumbs ol li + li {
-    padding-left: 10px;
-  }
-  .breadcrumbs ol li + li::before {
-    display: inline-block;
-    padding-right: 10px;
-    color: #4f4c55;
-    content: "/";
-  }
-  @media (max-width: 768px) {
-    .breadcrumbs .d-flex {
-      display: block !important;
-    }
-    .breadcrumbs ol {
-      display: block;
-    }
-    .breadcrumbs ol li {
-      display: inline-block;
-    }
-  }
-
-  .breadcrumbs .container ol li a {
-    color: #043c65;
-
-  }
-
-  /*--------------------------------------------------------------
-#
---------------------------------------------------------------*/
-
-.scrollmenu {
-    background-color: #333;
-    overflow: auto;
-    white-space: nowrap;
-  }
-
-  .scrollmenu a {
-    display: inline-block;
-
-    text-align: center;
-    padding: 14px;
-    text-decoration: none;
-  }
-
-  .scrollmenu a:hover {
-    background-color: #777;
-  }
-

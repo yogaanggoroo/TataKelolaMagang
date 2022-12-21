@@ -24,13 +24,12 @@
                         </div>
                     </div>
 
-                    <div class="presence-image">
-                        <img src="/img/presensi-magang.png" class="rounded mx-auto d-block" alt="Presence image"
+                    <div class="presence-image p-3">
+                        <img src="/img/presensi-magangg.svg" class="rounded mx-auto d-block" alt="Presence image"
                             width="300" height="300">
                     </div>
 
                     <div class="text-center">
-
                         <a href="{{ route('masuk') }}" :active="request()->routeIs('masuk')" class="btn btn-checkin"
                             style="background-color: #28a745; color: white;">{{ __('Check-In') }}</a>
 
@@ -51,8 +50,7 @@
                             style="background-color: #0E4770; color: white;">History</button> -->
 
                         <a href="{{ route('halaman-history') }}" :active="request()->routeIs('halaman-history')"
-                            class="btn btn-primary btn-history"
-                            style="color: white;">{{ __('History') }}</a>
+                            class="btn btn-primary btn-history" style="color: white;">{{ __('History') }}</a>
                     </div>
                 </div>
             </div>

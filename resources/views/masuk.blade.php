@@ -24,6 +24,7 @@
                     4px 4px 30px rgba(210, 25, 16, 0.4),
                     4px 4px 40px rgba(210, 15, 06, 0.4),
             }
+
         </style>
     </x-slot>
 
@@ -31,11 +32,10 @@
 
     <section class="breadcrumbs">
         <div class="container">
-
             <div class="d-flex justify-start align-items-center">
                 <ol>
-                  <li><a href="{{ route('presensi') }}">Presensi</a></li>
-                  <li>Check-In</li>
+                    <li><a href="{{ route('presensi') }}">Presensi</a></li>
+                    <li>Check-In</li>
                 </ol>
             </div>
         </div>
@@ -64,8 +64,7 @@
                             </div>
                             <center>
                                 <div class="form-group">
-                                    <button type="submit"
-                                        class="btn btn-presensi btn-outline-primary">Klik Untuk
+                                    <button type="submit" class="btn btn-presensi btn-outline-primary">Klik Untuk
                                         Presensi Masuk</button>
                                 </div>
                             </center>
@@ -75,9 +74,7 @@
                 </div>
             </div>
         </div>
-        <!-- /.content -->
     </div>
-    <!-- /.content-wrapper -->
 
     <!-- Footer -->
     @include('template.footer')

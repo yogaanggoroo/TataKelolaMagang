@@ -30,38 +30,34 @@
         <img src="{{ public_path('/img/template-atas.jpg') }}" class="float-start" style="width: 550px;">
     </div>
 
-    <div style="margin-right: 55px; margin-top: 81px;">
+    <!-- <div style="margin-right: 55px; margin-top: 81px;">
         <img src="{{ public_path('/img/pln.jpg') }}" class="float-end" style="width: 150px;">
     </div>
-
     <div style="margin-right: 59px;">
         <h3 class="text-right" style="padding-top: 55px; font-size: 13pt; ">KANTOR PUSAT</h3>
+    </div> -->
+
+    <div class="text-center pt-5">
+        <h3>LAPORAN PESERTA MAGANG</h3>
     </div>
 
-    <left>
-        <p>Nomor : <br>
-            Lampiran : - <br>
-            Sifat : <br>
-            Hal : Laporan Peserta Magang</p>
-    </left>
-
-    <!-- <div class="text-right">
-        <p style="margin-right: 207px;">Kepada</p>
-        <p style="margin-top: -10px;">Yth. Dekan Fakultas Telematika Energi</p>
-        <p style="margin-right: 72px; margin-top: -15px;">Institut Teknologi PLN</p>
-        <p style="margin-right: 13px; margin-top: -15px;">Kampus: Jl. Lingkar Luar Barat,</p>
-        <p style="margin-right: 45px; margin-top: -15px;">Duri Kosambi, Cengkareng</p>
-        <p style="margin-right: 90px; margin-top: -15px;">Jakarta Barat 11750.</p>
-    </div> -->
+    <div class="pt-3">
+        <left>
+            <p> Nama : <br>
+                Nim : <br>
+                Alamat : <br>
+            </p>
+        </left>
+    </div>
 
     <div class="text-justify pt-2">
         <p>
-            Mengenai dengan laporan peserta magang pada PT PLN (Persero). Berikut merupakan laporan magang peserta
-            magang, atas nama Mahasiswa :
+            Mengenai dengan dibuatnya laporan peserta magang di PT PLN (Persero).
+            Berikut ini merupakan laporan magang peserta, atas nama Mahasiswa :
         </p>
     </div>
 
-    <table class='table table-bordered pt-3'>
+    <table class='table table-bordered pt-2'>
         <thead style="background-color: #12a2bd; color: white;">
             <tr class="text-center">
                 <th scope="col">No</th>
@@ -87,7 +83,7 @@
         </tbody>
     </table>
 
-    <div class="text-justify pt-2">
+    <!-- <div class="text-justify pt-2">
         <p>Dengan ini menyatakan laporan magang dengan nama diatas merupakan laporan
             magang sendiri dan bukan merupakan tiruan, salinan atau duplikasi dari laporan magang yang telah dipergunakan
             untuk mendapatkan gelar Sarjana Teknik Informatika baik dilingkungan PT PLN (Persero)
@@ -97,9 +93,9 @@
             bersedia memikul segala resiko jika ternyata pernyataan diatas tidak benar.</p>
         <p style="margin-top: -5px;">Demikian yang telah disampaikan, atas perhatian dan kerjasamanya diucapkan terima
             kasih.</p>
-    </div>
+    </div> -->
 
-    <div class="ttd text-right pt-3">
+    <div class="ttd text-right pt-5">
         <p>_________________________</p>
         <p style="margin-right: 45px; margin-top: -10px;">Mentor</p>
         <p class="pt-5">____________________</p>

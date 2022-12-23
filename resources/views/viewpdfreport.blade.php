@@ -52,7 +52,7 @@
 
     <div class="text-justify pt-2">
         <p>
-            Mengenai dengan dibuatnya laporan peserta magang di PT PLN (Persero).
+            Mengenai dengan laporan peserta magang di PT PLN (Persero).
             Berikut ini merupakan laporan magang peserta, atas nama Mahasiswa :
         </p>
     </div>
